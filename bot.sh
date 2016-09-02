@@ -2,9 +2,9 @@
 
 msg()
 {
-  local msg="PRIVMSG $1:"
+  local msg="PRIVMSG $1"
 shift
-echo "$msg $@" | tee -a "$log"
+echo "$msg :$@" | tee -a "$log"
 }
 
 [ -f bot.properties ] && source bot.properties
