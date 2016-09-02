@@ -1,8 +1,15 @@
 #!/bin/bash
 
+msg()
+{
+  local msg="PRIVMSG $1:"
+shift
+echo "$msg $@" | tee -a "$log"
+}
+
 [ -f bot.properties ] && source bot.properties
 input=".bot.cfg"
-echo "Starting session: $(date "+[%y:%m:%d %T]")">$log 
+echo "Starting session: $(date "+[%y:%m:%d %T]")" | tee  $log 
 echo "NICK $nick" > $input 
 echo "USER $user" >> $input
 for c in ${channel[@]} ; do
@@ -12,7 +19,7 @@ done
 tail -f $input | telnet $server $port | while read res
 do
   # log the session
-  echo "$(date "+[%y:%m:%d %T]")$res" >> $log
+  echo "$(date "+[%y:%m:%d %T]")$res" | tee -a $log
   # do things when you see output
   case "$res" in
     # respond to ping requests from the server
@@ -24,12 +31,15 @@ do
       echo "JOIN #$channel" >> $input
     ;;
     # run when someone joins
-    *JOIN*) who=$(echo "$res" | perl -pe "s/:(.*)\!.*@.*/\1/")
-      if [ "$who" = "$nick" ]
-      then
+    *JOIN*)
+      who=$(echo "$res" | perl -pe "s/:(.*)\!.*@.*/\1/")
+      chan="$(echo "$res" | cut -d '#' -f2)"
+      chan="#$chan"
+      if [ "$who" = "$nick" ]; then
        continue 
       fi
       echo "MODE #$channel +o $who" >> $input
+      [ -e greeting.txt ] && msg $chan $who: $(shuf -n1 greeting.txt)
     ;;
     # run when a message is seen
     *PRIVMSG*)
