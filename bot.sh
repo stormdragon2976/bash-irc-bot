@@ -1,13 +1,15 @@
 #!/bin/bash
 
-. bot.properties
+[ -f bot.properties ] && source bot.properties
 input=".bot.cfg"
 echo "Starting session: $(date "+[%y:%m:%d %T]")">$log 
 echo "NICK $nick" > $input 
 echo "USER $user" >> $input
-echo "JOIN #$channel" >> $input
+for c in ${channel[@]} ; do
+  echo "JOIN #$c" | tee -a $input
+done
 
-tail -f $input | telnet $server 6667 | while read res
+tail -f $input | telnet $server $port | while read res
 do
   # log the session
   echo "$(date "+[%y:%m:%d %T]")$res" >> $log
