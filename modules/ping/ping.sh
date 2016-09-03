@@ -1,1 +1,2 @@
-echo "PRIVMSG $2 :$1: pong"
+[ -f functions.sh ] && source functions.sh
+msg $2 "$1: pong"

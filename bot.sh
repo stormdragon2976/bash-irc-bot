@@ -1,12 +1,6 @@
 #!/bin/bash
 
-msg()
-{
-  local msg="PRIVMSG $1"
-shift
-echo "$msg :$@" | tee -a "$log"
-}
-
+[ -f functions.sh ] && source functions.sh
 [ -f bot.properties ] && source bot.properties
 input=".bot.cfg"
 echo "Starting session: $(date "+[%y:%m:%d %T]")" | tee  $log 
@@ -39,7 +33,7 @@ do
        continue 
       fi
       echo "MODE #$channel +o $who" >> $input
-      [ -e greeting.txt ] && msg $chan $who: $(shuf -n1 greeting.txt)
+      [ -e greeting.txt ] && msg "$chan" "$who: $(shuf -n1 greeting.txt)"
     ;;
     # run when a message is seen
     *PRIVMSG*)
