@@ -33,7 +33,7 @@ do
        continue 
       fi
       echo "MODE #$channel +o $who" >> $input
-      [ -e greeting.txt ] && msg "$chan" "$who: $(shuf -n1 greeting.txt)"
+      ./triggers/greet/greet.sh $who $chan
     ;;
     # run when a message is seen
     *PRIVMSG*)
@@ -53,10 +53,10 @@ do
       com=$(echo "$will" | cut -d " " -f1)
       if [ -z "$(ls modules/ | grep -i -- "$com")" ] || [ -z "$com" ]
       then
-        ./modules/help/help.sh $who $from >> $input
+        ./modules/help/help.sh $who $from
         continue
       fi
-      ./modules/$com/$com.sh $who $from $(echo "$will" | cut -d " " -f2-99) >> $input
+      ./modules/$com/$com.sh $who $from $(echo "$will" | cut -d " " -f2-99)
     ;;
     *)
       echo "$res"
