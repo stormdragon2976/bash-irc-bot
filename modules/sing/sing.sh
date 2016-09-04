@@ -7,7 +7,7 @@ shift
 #get the lyric text into a variable
 trackName="$@"
 curl="$(command -v curl)"
-trackName="$(echo "$trackName" | sed -e "s/ /_/g" -e 's/([[:print:]]*)//g' -e "s/['\/\.]//g" -e 's/&/and/g')"
+trackName="$(echo "$trackName" | sed -e "s/ /_/g" -e 's/([[:print:]]*)//g' -e "s/['\/\.]//g" -e 's/&/and/g' -e 's/ö/o/g')"
 artist="$(echo "${trackName,,}" | cut -d "-" -f 1 | sed -e 's/_$//' -e 's/^the_\(.*\)/\1_the/')"
 song="$(echo "${trackName,,}" | cut -d "-" -f 2 | sed 's/^_//')"
 lyricsUrl="http://www.lyricsmania.com/${song}_lyrics_${artist}.html"
@@ -36,7 +36,7 @@ if [ ${#lyricText} -gt 412 ] ; then
 fi
 #Display the lyric text
 if [ ${#lyricText} -gt 15 ] ; then
-msg "$chan" "${lyricText}"
+act "$chan" "sings, '${lyricText}'"
 else
 msg "$chan" "Sorry $userNick: I couldn't find any lyrics for $@"
 fi

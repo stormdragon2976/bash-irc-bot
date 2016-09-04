@@ -35,14 +35,29 @@ do
       echo "MODE #$channel +o $who" >> $input
       ./triggers/greet/greet.sh $who $chan
     ;;
+    # run when someone leaves
+    *PART #*)
+      who=$(echo "$res" | perl -pe "s/:(.*)\!.*@.*/\1/")
+      chan="$(echo "$res" | cut -d '#' -f2)"
+      chan="#$chan"
+      if [ "$who" = "$nick" ]; then
+       continue 
+      fi
+      echo "MODE #$channel +o $who" >> $input
+      ./triggers/greet/bye.sh $who $chan
+    ;;
     # run when a message is seen
     *PRIVMSG*)
       echo "$res"
       who=$(echo "$res" | perl -pe "s/:(.*)\!.*@.*/\1/")
       from=$(echo "$res" | perl -pe "s/.*PRIVMSG (.*[#]?([a-zA-Z]|\-)*) :.*/\1/")
+      # This looks to be the spot where triggers should be called
+      # Call link trigger if msg contains a link:
+      if [[ "$res" =~ .*http://|https://|www\..* ]]; then
+        msg "$from" "This contains a url. Unfortunately my master is being lazy and hasn't made a url parser, so I can't tell you where it goes."
+      fi
       # "#" would mean it's a channel
-      if [ "$(echo "$from" | grep '#')" ]
-      then
+      if [ "$(echo "$from" | grep '#')" ]; then
         test "$(echo "$res" | grep ":$nick:")" || continue
         will=$(echo "$res" | perl -pe "s/.*:$nick:(.*)/\1/")
       else
@@ -51,14 +66,15 @@ do
       fi
       will=$(echo "$will" | perl -pe "s/^ //")
       com=$(echo "$will" | cut -d " " -f1)
-      if [ -z "$(ls modules/ | grep -i -- "$com")" ] || [ -z "$com" ]
-      then
+      if [ -z "$(ls modules/ | grep -i -- "$com")" ] || [ -z "$com" ]; then
         ./modules/help/help.sh $who $from
         continue
       fi
       ./modules/$com/$com.sh $who $from $(echo "$will" | cut -d " " -f2-99)
     ;;
     *)
+      chan="$(echo "$res" | cut -d '#' -f2)"
+      chan="#$chan"
       echo "$res"
     ;;
   esac
