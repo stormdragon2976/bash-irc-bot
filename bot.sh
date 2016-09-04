@@ -33,10 +33,10 @@ do
        continue 
       fi
       echo "MODE #$channel +o $who" >> $input
-      ./triggers/greet/greet.sh $who $chan
+      [ "${greet,,}" = "true" ] && ./triggers/greet/greet.sh $who $chan
     ;;
     # run when someone leaves
-    *PART #*)
+    *"PART #"*)
       who=$(echo "$res" | perl -pe "s/:(.*)\!.*@.*/\1/")
       chan="$(echo "$res" | cut -d '#' -f2)"
       chan="#$chan"
@@ -44,7 +44,7 @@ do
        continue 
       fi
       echo "MODE #$channel +o $who" >> $input
-      ./triggers/greet/bye.sh $who $chan
+      [ "${leave,,}" = "TRUE" ] && ./triggers/bye/bye.sh $who $chan
     ;;
     # run when a message is seen
     *PRIVMSG*)
