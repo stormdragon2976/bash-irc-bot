@@ -25,7 +25,7 @@ do
       echo "JOIN #$channel" >> $input
     ;;
     # run when someone joins
-    *JOIN*)
+    *"JOIN #"*)
       who=$(echo "$res" | perl -pe "s/:(.*)\!.*@.*/\1/")
       chan="$(echo "$res" | cut -d '#' -f2)"
       chan="#$chan"
@@ -33,7 +33,7 @@ do
        continue 
       fi
       echo "MODE #$channel +o $who" >> $input
-      [ "${greet,,}" = "true" ] && ./triggers/greet/greet.sh $who $chan
+      [ "${greet^^}" = "TRUE" ] && ./triggers/greet/greet.sh $who $chan
     ;;
     # run when someone leaves
     *"PART #"*)
@@ -44,7 +44,7 @@ do
        continue 
       fi
       echo "MODE #$channel +o $who" >> $input
-      [ "${leave,,}" = "TRUE" ] && ./triggers/bye/bye.sh $who $chan
+      [ "${leave^^}" = "TRUE" ] && ./triggers/bye/bye.sh $who $chan
     ;;
     # run when a message is seen
     *PRIVMSG*)
@@ -54,7 +54,15 @@ do
       # This looks to be the spot where triggers should be called
       # Call link trigger if msg contains a link:
       if [[ "$res" =~ .*http://|https://|www\..* ]]; then
-        msg "$from" "This contains a url. Unfortunately my master is being lazy and hasn't made a url parser, so I can't tell you where it goes."
+        ./triggers/link/link.sh "$who" "$from" "$res"
+      # Although this calls modules, it triggers on text other than the bot's nick
+      elif [[ "$res" =~ .*$from\ :$who:$triggers.* ]]; then
+        com"${res#*$from :$who:$triggers}"
+      if [ -z "$(ls modules/ | grep -i -- "${com%* }")" ] || [ -z "$com" ]; then
+        ./modules/help/help.sh $who $from
+        continue
+      fi
+      ./modules/${com% *}/${com% *}.sh $who $from "${com#* }"
       fi
       # "#" would mean it's a channel
       if [ "$(echo "$from" | grep '#')" ]; then
