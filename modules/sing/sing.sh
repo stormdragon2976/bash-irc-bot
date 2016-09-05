@@ -32,7 +32,7 @@ lyricText="$(echo "$lyricText" | tr "[:space:]" " " | tr -s "[:space:]")"
 #sometimes lyrics are just one long line with everything. If this happens, cut it down so it's not too long for the 512 character channel limit.
 if [ ${#lyricText} -gt 412 ] ; then
     lyricText="${lyricText:0:409}... "
-    lyricText="$(echo "$lyricText" | rev | cut -d " " -f 1- | rev)"
+    lyricText="$(echo "$lyricText" | rev | cut -d " " -f 1- | rev | sed -e 's/try { _.*//g')"
 fi
 #Display the lyric text
 if [ ${#lyricText} -gt 15 ] ; then
