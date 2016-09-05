@@ -25,7 +25,7 @@ do
       echo "JOIN #$channel" >> $input
     ;;
     # run when someone joins
-    *"JOIN #"*)
+    *"JOIN :#"*)
       who=$(echo "$res" | perl -pe "s/:(.*)\!.*@.*/\1/")
       chan="$(echo "$res" | cut -d '#' -f2)"
       chan="#$chan"
@@ -33,7 +33,9 @@ do
        continue 
       fi
       echo "MODE #$channel +o $who" >> $input
-      [ "${greet^^}" = "TRUE" ] && ./triggers/greet/greet.sh $who $chan
+      if [ "${greet^^}" = "TRUE" ]; then
+        ./triggers/greet/greet.sh $who $chan
+      fi
     ;;
     # run when someone leaves
     *"PART #"*)
@@ -44,7 +46,9 @@ do
        continue 
       fi
       echo "MODE #$channel +o $who" >> $input
-      [ "${leave^^}" = "TRUE" ] && ./triggers/bye/bye.sh $who $chan
+      if [ "${leave^^}" = "TRUE" ]; then
+        ./triggers/bye/bye.sh $who $chan
+      fi
     ;;
     # run when a message is seen
     *PRIVMSG*)
@@ -56,8 +60,9 @@ do
       if [[ "$res" =~ .*http://|https://|www\..* ]]; then
         ./triggers/link/link.sh "$who" "$from" "$res"
       # Although this calls modules, it triggers on text other than the bot's nick
-      elif [[ "$res" =~ .*$from\ :$who:$triggers.* ]]; then
-        com"${res#*$from :$who:$triggers}"
+      elif [[ "$res" =~ *PRIVMSG\ \#${from#*#}\ :$triggers* ]]; then
+        com"${res#*:$triggers}"
+        com"${com//# /}"
       if [ -z "$(ls modules/ | grep -i -- "${com%* }")" ] || [ -z "$com" ]; then
         ./modules/help/help.sh $who $from
         continue
@@ -72,7 +77,7 @@ do
         will=$(echo "$res" | perl -pe "s/.*$nick :(.*)/\1/")
         from=$who
       fi
-      will=$(echo "$will" | perl -pe "s/^ //")
+      will=$(echo "$will" | perl -pe "s/^ +//")
       com=$(echo "$will" | cut -d " " -f1)
       if [ -z "$(ls modules/ | grep -i -- "$com")" ] || [ -z "$com" ]; then
         ./modules/help/help.sh $who $from
