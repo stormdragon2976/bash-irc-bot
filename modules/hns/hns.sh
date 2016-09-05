@@ -31,5 +31,5 @@ elif [[ "$player" = "HACKER" && "$cpu" != "SHOTGUN" ]]; then
 elif [[ "$player" = "NUKE" && "$cpu" != "HACKER" ]]; then
   msg "$2" "$1: Never bring a $cpu to a fight with ${player}s! You blew my ass up! You win!"
 else
-  msg "$2" "$1: your $player splattered my ${player}'s head all over the wall! Eww gross, look at the brain goo... You win!"
+  msg "$2" "$1: your $player splattered my ${cpu}'s head all over the wall! Eww gross, look at the brain goo... You win!"
 fi
