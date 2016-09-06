@@ -79,6 +79,8 @@ do
         continue
       fi
       ./modules/${com% *}/${com% *}.sh "$who" "$from" "$will"
+      else
+      ./triggers/keywords/keywords.sh "$from" "$res"
       fi
       # "#" would mean it's a channel
       if [ "$(echo "$from" | grep '#')" ]; then
