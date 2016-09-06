@@ -1,12 +1,12 @@
 #!/bin/bash
 
 [ -f functions.sh ] && source functions.sh
-[ -f bot.properties ] && source bot.properties
+[ -f bot.cfg ] && source bot.cfg
 input=".botinput"
 
 close_bot()
 {
-  echo -en "QUIT :$quitMessage\r\n" >> "$input"
+  echo -en ":QUIT :$quitMessage\r\n" >> "$input"
   rm "$input"
   exit 0
 }
@@ -76,7 +76,6 @@ do
         will="${com#* }"
         com="${com%% *}"
       if [ -z "$(ls modules/ | grep -i -- "$com")" ] || [ -z "$com" ]; then
-        ./modules/help/help.sh "$who" "$from"
         continue
       fi
       ./modules/${com% *}/${com% *}.sh "$who" "$from" "$will"
@@ -92,7 +91,7 @@ do
       will=$(echo "$will" | perl -pe "s/^ +//")
       com=$(echo "$will" | cut -d " " -f1)
       if [ -z "$(ls modules/ | grep -i -- "$com")" ] || [ -z "$com" ]; then
-        ./modules/help/help.sh $who $from
+        ./modules/help/help.sh "$who" "$from"
         continue
       fi
       ./modules/$com/$com.sh $who $from $(echo "$will" | cut -d " " -f2-99)
