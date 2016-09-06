@@ -2,7 +2,17 @@
 
 [ -f functions.sh ] && source functions.sh
 [ -f bot.properties ] && source bot.properties
-input=".bot.cfg"
+input=".botinput"
+
+close_bot()
+{
+echo -en "QUIT :$quitMessage\r\n" >> "$input"
+rm "$input"
+sleep 10
+}
+
+trap close_bot EXIT $?
+
 echo "Starting session: $(date "+[%y:%m:%d %T]")" | tee  $log 
 echo "NICK $nick" > $input 
 echo "USER $user" >> $input
