@@ -6,9 +6,9 @@ input=".botinput"
 
 close_bot()
 {
-echo -en "QUIT :$quitMessage\r\n" >> "$input"
-rm "$input"
-sleep 10
+  echo -en "QUIT :$quitMessage\r\n" >> "$input"
+  rm "$input"
+  exit 0
 }
 
 trap close_bot EXIT $?
@@ -70,14 +70,16 @@ do
       if [[ "$res" =~ .*http://|https://|www\..* ]]; then
         ./triggers/link/link.sh "$who" "$from" "$res"
       # Although this calls modules, it triggers on text other than the bot's nick
-      elif [[ "$res" =~ *PRIVMSG\ \#${from#*#}\ :$triggers* ]]; then
-        com"${res#*:$triggers}"
-        com"${com//# /}"
-      if [ -z "$(ls modules/ | grep -i -- "${com%* }")" ] || [ -z "$com" ]; then
-        ./modules/help/help.sh $who $from
+      elif [[ "$res" =~ ^.*PRIVMSG.*:[[:punct:]].* ]]; then
+        com="${res#*:[[:punct:]]}"
+        com="${com//# /}"
+        will="${com#* }"
+        com="${com%% *}"
+      if [ -z "$(ls modules/ | grep -i -- "$com")" ] || [ -z "$com" ]; then
+        ./modules/help/help.sh "$who" "$from"
         continue
       fi
-      ./modules/${com% *}/${com% *}.sh $who $from "${com#* }"
+      ./modules/${com% *}/${com% *}.sh "$who" "$from" "$will"
       fi
       # "#" would mean it's a channel
       if [ "$(echo "$from" | grep '#')" ]; then
