@@ -80,7 +80,7 @@ do
       fi
       ./modules/${com% *}/${com% *}.sh "$who" "$from" "$will"
       else
-      ./triggers/keywords/keywords.sh "$from" "$res"
+      ./triggers/keywords/keywords.sh "$who" "$from" "$res"
       fi
       # "#" would mean it's a channel
       if [ "$(echo "$from" | grep '#')" ]; then
