@@ -83,7 +83,7 @@ do
       if [ -z "$(ls modules/ | grep -i -- "$command")" ] || [ -z "$command" ]; then
         continue
       fi
-      ./modules/${command% *}/${command% *}.sh "$who" "$from" "$will"
+      ./modules/${command% *}/${command% *}.sh "$who" "$from" $will
       else
       ./triggers/keywords/keywords.sh "$who" "$from" "$result"
       fi
@@ -95,19 +95,19 @@ do
       else
         will="${result:1}"
         will="${will#* :}"
-        from=$who
+        from="$who"
       fi
       # Had to turn on globbing to remove all leading whitespace, then turn it off again afterwards.
       shopt -s extglob
       will="${will##*( )}"
       shopt -u extglob
-      command="${will% *}"
+      command="${will%% *}"
       will="${will#* }"
       if [ -z "$(ls modules/ | grep -i -- "$command")" ] || [ -z "$command" ]; then
         ./modules/help/help.sh "$who" "$from"
         continue
       fi
-      ./modules/$command/$command.sh "$who" "$from" "$will"
+      ./modules/$command/$command.sh "$who" "$from" $will
     ;;
     *)
       echo "$result" | tee -a "$log"
