@@ -1,28 +1,3 @@
-Trying 163.172.137.39...
-Connected to irc.netwirc.tk.
-Escape character is '^]'.
-:nuclear.netwirc.tk NOTICE * :*** Looking up your hostname...
-:nuclear.netwirc.tk NOTICE * :*** Couldn't resolve your hostname; using your IP address instead
-:nuclear.netwirc.tk 001 storm_bot :Welcome to the NetwIRC IRC Network storm_bot!storm_bot@137.118.216.238
-:nuclear.netwirc.tk 002 storm_bot :Your host is nuclear.netwirc.tk, running version UnrealIRCd-4.0.5
-:nuclear.netwirc.tk 003 storm_bot :This server was created Sat Jul 30 2016 at 18:16:53 UTC
-:nuclear.netwirc.tk 004 storm_bot nuclear.netwirc.tk UnrealIRCd-4.0.5 iowrsxzdHtIRqpWGTSB lvhopsmntikraqbeIzMQNRTOVKDdGLPZSCcf
-:nuclear.netwirc.tk 005 storm_bot CMDS=USERIP,STARTTLS,KNOCK,DCCALLOW,MAP UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=25 CHANLIMIT=#:25 MAXLIST=b:60,e:60,I:60 MAXNICKLEN=30 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 :are supported by this server
-:nuclear.netwirc.tk 005 storm_bot AWAYLEN=307 MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kLf,l,psmntirzMQNRTOVKDdGPZSCc NETWORK=NetwIRC CASEMAPPING=ascii EXTBAN=~,SOcaRrnqj :are supported by this server
-:nuclear.netwirc.tk 005 storm_bot ELIST=MNUCT STATUSMSG=~&@%+ EXCEPTS INVEX :are supported by this server
-:nuclear.netwirc.tk 396 storm_bot 6A229115.A61C7C6C.37E689BC.IP :is now your displayed host
-:nuclear.netwirc.tk 251 storm_bot :There are 1 users and 33 invisible on 4 servers
-:nuclear.netwirc.tk 252 storm_bot 9 :operator(s) online
-:nuclear.netwirc.tk 254 storm_bot 9 :channels formed
-:nuclear.netwirc.tk 255 storm_bot :I have 17 clients and 3 servers
-:nuclear.netwirc.tk 265 storm_bot 17 21 :Current local users 17, max 21
-:nuclear.netwirc.tk 266 storm_bot 34 40 :Current global users 34, max 40
-:nuclear.netwirc.tk 422 storm_bot :MOTD File is missing
-:storm_bot MODE storm_bot :+iwx
-:nuclear.netwirc.tk 332 storm_bot #a11y :Welcome to #a11y, because we are more than this!
-:nuclear.netwirc.tk 333 storm_bot #a11y Jeremiah 1472770664
-:nuclear.netwirc.tk 353 storm_bot = #a11y :storm_bot xogium xogium_ mariachiac @chrys @storm_dragon Tsadoq lilmike @PrinceKyle Virgo Mysterytrain &data
-:nuclear.netwirc.tk 366 storm_bot #a11y :End of /NAMES list.
 Trying 71.69.198.142...
 Connected to irc.netwirc.tk.
 Escape character is '^]'.
@@ -36,17 +11,17 @@ Escape character is '^]'.
 :ender.netwirc.tk 005 storm_bot MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kLf,l,psmntirzMQNRTOVKDdGPZSCc NETWORK=NetwIRC CASEMAPPING=ascii EXTBAN=~,SOcaRrnqj ELIST=MNUCT :are supported by this server
 :ender.netwirc.tk 005 storm_bot STATUSMSG=~&@%+ EXCEPTS INVEX CMDS=USERIP,STARTTLS,KNOCK,DCCALLOW,MAP :are supported by this server
 :ender.netwirc.tk 396 storm_bot 6A229115.A61C7C6C.37E689BC.IP :is now your displayed host
-:ender.netwirc.tk 251 storm_bot :There are 1 users and 33 invisible on 4 servers
-:ender.netwirc.tk 252 storm_bot 9 :operator(s) online
+:ender.netwirc.tk 251 storm_bot :There are 1 users and 35 invisible on 4 servers
+:ender.netwirc.tk 252 storm_bot 10 :operator(s) online
 :ender.netwirc.tk 254 storm_bot 9 :channels formed
 :ender.netwirc.tk 255 storm_bot :I have 7 clients and 1 servers
 :ender.netwirc.tk 265 storm_bot 7 13 :Current local users 7, max 13
-:ender.netwirc.tk 266 storm_bot 34 40 :Current global users 34, max 40
+:ender.netwirc.tk 266 storm_bot 36 40 :Current global users 36, max 40
 :ender.netwirc.tk 422 storm_bot :MOTD File is missing
 :storm_bot MODE storm_bot :+iwx
 :ender.netwirc.tk 332 storm_bot #a11y :Welcome to #a11y, because we are more than this!
 :ender.netwirc.tk 333 storm_bot #a11y Jeremiah 1472770664
-:ender.netwirc.tk 353 storm_bot = #a11y :storm_bot xogium xogium_ mariachiac @chrys @storm_dragon Tsadoq lilmike @PrinceKyle Virgo Mysterytrain &data
+:ender.netwirc.tk 353 storm_bot = #a11y :storm_bot xogium ~Jeremiah chrys-tablet xogium_ mariachiac @chrys @storm_dragon Tsadoq lilmike @PrinceKyle Virgo Mysterytrain &data
 :ender.netwirc.tk 366 storm_bot #a11y :End of /NAMES list.
 Trying 163.172.137.39...
 Connected to irc.netwirc.tk.
@@ -61,70 +36,142 @@ Escape character is '^]'.
 :nuclear.netwirc.tk 005 storm_bot AWAYLEN=307 MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kLf,l,psmntirzMQNRTOVKDdGPZSCc NETWORK=NetwIRC CASEMAPPING=ascii EXTBAN=~,SOcaRrnqj :are supported by this server
 :nuclear.netwirc.tk 005 storm_bot ELIST=MNUCT STATUSMSG=~&@%+ EXCEPTS INVEX :are supported by this server
 :nuclear.netwirc.tk 396 storm_bot 6A229115.A61C7C6C.37E689BC.IP :is now your displayed host
-:nuclear.netwirc.tk 251 storm_bot :There are 1 users and 32 invisible on 4 servers
-:nuclear.netwirc.tk 252 storm_bot 9 :operator(s) online
-:nuclear.netwirc.tk 254 storm_bot 9 :channels formed
-:nuclear.netwirc.tk 255 storm_bot :I have 16 clients and 3 servers
-:nuclear.netwirc.tk 265 storm_bot 16 21 :Current local users 16, max 21
-:nuclear.netwirc.tk 266 storm_bot 33 40 :Current global users 33, max 40
-:nuclear.netwirc.tk 422 storm_bot :MOTD File is missing
-:storm_bot MODE storm_bot :+iwx
-:nuclear.netwirc.tk 332 storm_bot #a11y :Welcome to #a11y, because we are more than this!
-:nuclear.netwirc.tk 333 storm_bot #a11y Jeremiah 1472770664
-:nuclear.netwirc.tk 353 storm_bot = #a11y :storm_bot xogium xogium_ mariachiac @chrys @storm_dragon Tsadoq lilmike @PrinceKyle Virgo Mysterytrain &data
-:nuclear.netwirc.tk 366 storm_bot #a11y :End of /NAMES list.
-:nuclear.netwirc.tk 482 storm_bot #a11y :You're not channel operator
-:data!commander@netwirc.tk MODE #a11y +qo Jeremiah Jeremiah
-:nuclear.netwirc.tk 482 storm_bot #a11y :You're not channel operator
-Trying 71.69.198.142...
-Connected to irc.netwirc.tk.
-Escape character is '^]'.
-:ender.netwirc.tk NOTICE * :*** Looking up your hostname...
-:ender.netwirc.tk NOTICE * :*** Couldn't resolve your hostname; using your IP address instead
-:ender.netwirc.tk 001 storm_bot :Welcome to the NetwIRC IRC Network storm_bot!storm_bot@137.118.216.238
-:ender.netwirc.tk 002 storm_bot :Your host is ender.netwirc.tk, running version UnrealIRCd-4.0.3.1
-:ender.netwirc.tk 003 storm_bot :This server was created Thu Jun 2 2016 at 01:57:02 UTC
-:ender.netwirc.tk 004 storm_bot ender.netwirc.tk UnrealIRCd-4.0.3.1 iowrsxzdHtIRqpWGTSB lvhopsmntikraqbeIzMQNRTOVKDdGLPZSCcf
-:ender.netwirc.tk 005 storm_bot UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=25 CHANLIMIT=#:25 MAXLIST=b:60,e:60,I:60 MAXNICKLEN=30 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 :are supported by this server
-:ender.netwirc.tk 005 storm_bot MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kLf,l,psmntirzMQNRTOVKDdGPZSCc NETWORK=NetwIRC CASEMAPPING=ascii EXTBAN=~,SOcaRrnqj ELIST=MNUCT :are supported by this server
-:ender.netwirc.tk 005 storm_bot STATUSMSG=~&@%+ EXCEPTS INVEX CMDS=USERIP,STARTTLS,KNOCK,DCCALLOW,MAP :are supported by this server
-:ender.netwirc.tk 396 storm_bot 6A229115.A61C7C6C.37E689BC.IP :is now your displayed host
-:ender.netwirc.tk 251 storm_bot :There are 1 users and 34 invisible on 4 servers
-:ender.netwirc.tk 252 storm_bot 10 :operator(s) online
-:ender.netwirc.tk 254 storm_bot 9 :channels formed
-:ender.netwirc.tk 255 storm_bot :I have 8 clients and 1 servers
-:ender.netwirc.tk 265 storm_bot 8 13 :Current local users 8, max 13
-:ender.netwirc.tk 266 storm_bot 35 40 :Current global users 35, max 40
-:ender.netwirc.tk 422 storm_bot :MOTD File is missing
-:storm_bot MODE storm_bot :+iwx
-:ender.netwirc.tk 332 storm_bot #a11y :Welcome to #a11y, because we are more than this!
-:ender.netwirc.tk 333 storm_bot #a11y Jeremiah 1472770664
-:ender.netwirc.tk 353 storm_bot = #a11y :storm_bot ~Jeremiah Annalyn xogium xogium_ mariachiac @chrys @storm_dragon Tsadoq lilmike @PrinceKyle Virgo Mysterytrain &data
-:ender.netwirc.tk 366 storm_bot #a11y :End of /NAMES list.
-Trying 163.172.137.39...
-Connected to irc.netwirc.tk.
-Escape character is '^]'.
-:nuclear.netwirc.tk NOTICE * :*** Looking up your hostname...
-:nuclear.netwirc.tk NOTICE * :*** Couldn't resolve your hostname; using your IP address instead
-:nuclear.netwirc.tk 001 storm_bot :Welcome to the NetwIRC IRC Network storm_bot!storm_bot@137.118.216.238
-:nuclear.netwirc.tk 002 storm_bot :Your host is nuclear.netwirc.tk, running version UnrealIRCd-4.0.5
-:nuclear.netwirc.tk 003 storm_bot :This server was created Sat Jul 30 2016 at 18:16:53 UTC
-:nuclear.netwirc.tk 004 storm_bot nuclear.netwirc.tk UnrealIRCd-4.0.5 iowrsxzdHtIRqpWGTSB lvhopsmntikraqbeIzMQNRTOVKDdGLPZSCcf
-:nuclear.netwirc.tk 005 storm_bot CMDS=USERIP,STARTTLS,KNOCK,DCCALLOW,MAP UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=25 CHANLIMIT=#:25 MAXLIST=b:60,e:60,I:60 MAXNICKLEN=30 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 :are supported by this server
-:nuclear.netwirc.tk 005 storm_bot AWAYLEN=307 MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kLf,l,psmntirzMQNRTOVKDdGPZSCc NETWORK=NetwIRC CASEMAPPING=ascii EXTBAN=~,SOcaRrnqj :are supported by this server
-:nuclear.netwirc.tk 005 storm_bot ELIST=MNUCT STATUSMSG=~&@%+ EXCEPTS INVEX :are supported by this server
-:nuclear.netwirc.tk 396 storm_bot 6A229115.A61C7C6C.37E689BC.IP :is now your displayed host
-:nuclear.netwirc.tk 251 storm_bot :There are 1 users and 34 invisible on 4 servers
+:nuclear.netwirc.tk 251 storm_bot :There are 1 users and 35 invisible on 4 servers
 :nuclear.netwirc.tk 252 storm_bot 10 :operator(s) online
 :nuclear.netwirc.tk 254 storm_bot 9 :channels formed
-:nuclear.netwirc.tk 255 storm_bot :I have 17 clients and 3 servers
-:nuclear.netwirc.tk 265 storm_bot 17 21 :Current local users 17, max 21
-:nuclear.netwirc.tk 266 storm_bot 35 40 :Current global users 35, max 40
+:nuclear.netwirc.tk 255 storm_bot :I have 19 clients and 3 servers
+:nuclear.netwirc.tk 265 storm_bot 19 21 :Current local users 19, max 21
+:nuclear.netwirc.tk 266 storm_bot 36 40 :Current global users 36, max 40
 :nuclear.netwirc.tk 422 storm_bot :MOTD File is missing
 :storm_bot MODE storm_bot :+iwx
 :nuclear.netwirc.tk 332 storm_bot #a11y :Welcome to #a11y, because we are more than this!
 :nuclear.netwirc.tk 333 storm_bot #a11y Jeremiah 1472770664
-:nuclear.netwirc.tk 353 storm_bot = #a11y :storm_bot ~Jeremiah Annalyn xogium xogium_ mariachiac @chrys @storm_dragon Tsadoq lilmike @PrinceKyle Virgo Mysterytrain &data
+:nuclear.netwirc.tk 353 storm_bot = #a11y :storm_bot xogium ~Jeremiah chrys-tablet xogium_ mariachiac @chrys @storm_dragon Tsadoq lilmike @PrinceKyle Virgo Mysterytrain &data
+:nuclear.netwirc.tk 366 storm_bot #a11y :End of /NAMES list.
+Trying 163.172.137.39...
+Connected to irc.netwirc.tk.
+Escape character is '^]'.
+:nuclear.netwirc.tk NOTICE * :*** Looking up your hostname...
+:nuclear.netwirc.tk NOTICE * :*** Couldn't resolve your hostname; using your IP address instead
+:nuclear.netwirc.tk 001 storm_bot :Welcome to the NetwIRC IRC Network storm_bot!storm_bot@137.118.216.238
+:nuclear.netwirc.tk 002 storm_bot :Your host is nuclear.netwirc.tk, running version UnrealIRCd-4.0.5
+:nuclear.netwirc.tk 003 storm_bot :This server was created Sat Jul 30 2016 at 18:16:53 UTC
+:nuclear.netwirc.tk 004 storm_bot nuclear.netwirc.tk UnrealIRCd-4.0.5 iowrsxzdHtIRqpWGTSB lvhopsmntikraqbeIzMQNRTOVKDdGLPZSCcf
+:nuclear.netwirc.tk 005 storm_bot CMDS=USERIP,STARTTLS,KNOCK,DCCALLOW,MAP UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=25 CHANLIMIT=#:25 MAXLIST=b:60,e:60,I:60 MAXNICKLEN=30 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 :are supported by this server
+:nuclear.netwirc.tk 005 storm_bot AWAYLEN=307 MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kLf,l,psmntirzMQNRTOVKDdGPZSCc NETWORK=NetwIRC CASEMAPPING=ascii EXTBAN=~,SOcaRrnqj :are supported by this server
+:nuclear.netwirc.tk 005 storm_bot ELIST=MNUCT STATUSMSG=~&@%+ EXCEPTS INVEX :are supported by this server
+:nuclear.netwirc.tk 396 storm_bot 6A229115.A61C7C6C.37E689BC.IP :is now your displayed host
+:nuclear.netwirc.tk 251 storm_bot :There are 1 users and 35 invisible on 4 servers
+:nuclear.netwirc.tk 252 storm_bot 10 :operator(s) online
+:nuclear.netwirc.tk 254 storm_bot 9 :channels formed
+:nuclear.netwirc.tk 255 storm_bot :I have 19 clients and 3 servers
+:nuclear.netwirc.tk 265 storm_bot 19 21 :Current local users 19, max 21
+:nuclear.netwirc.tk 266 storm_bot 36 40 :Current global users 36, max 40
+:nuclear.netwirc.tk 422 storm_bot :MOTD File is missing
+:storm_bot MODE storm_bot :+iwx
+:nuclear.netwirc.tk 332 storm_bot #a11y :Welcome to #a11y, because we are more than this!
+:nuclear.netwirc.tk 333 storm_bot #a11y Jeremiah 1472770664
+:nuclear.netwirc.tk 353 storm_bot = #a11y :storm_bot xogium ~Jeremiah chrys-tablet xogium_ mariachiac @chrys @storm_dragon Tsadoq lilmike @PrinceKyle Virgo Mysterytrain &data
+:nuclear.netwirc.tk 366 storm_bot #a11y :End of /NAMES list.
+Trying 163.172.137.39...
+Connected to irc.netwirc.tk.
+Escape character is '^]'.
+:nuclear.netwirc.tk NOTICE * :*** Looking up your hostname...
+:nuclear.netwirc.tk NOTICE * :*** Couldn't resolve your hostname; using your IP address instead
+:nuclear.netwirc.tk 001 storm_bot :Welcome to the NetwIRC IRC Network storm_bot!storm_bot@137.118.216.238
+:nuclear.netwirc.tk 002 storm_bot :Your host is nuclear.netwirc.tk, running version UnrealIRCd-4.0.5
+:nuclear.netwirc.tk 003 storm_bot :This server was created Sat Jul 30 2016 at 18:16:53 UTC
+:nuclear.netwirc.tk 004 storm_bot nuclear.netwirc.tk UnrealIRCd-4.0.5 iowrsxzdHtIRqpWGTSB lvhopsmntikraqbeIzMQNRTOVKDdGLPZSCcf
+:nuclear.netwirc.tk 005 storm_bot CMDS=USERIP,STARTTLS,KNOCK,DCCALLOW,MAP UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=25 CHANLIMIT=#:25 MAXLIST=b:60,e:60,I:60 MAXNICKLEN=30 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 :are supported by this server
+:nuclear.netwirc.tk 005 storm_bot AWAYLEN=307 MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kLf,l,psmntirzMQNRTOVKDdGPZSCc NETWORK=NetwIRC CASEMAPPING=ascii EXTBAN=~,SOcaRrnqj :are supported by this server
+:nuclear.netwirc.tk 005 storm_bot ELIST=MNUCT STATUSMSG=~&@%+ EXCEPTS INVEX :are supported by this server
+:nuclear.netwirc.tk 396 storm_bot 6A229115.A61C7C6C.37E689BC.IP :is now your displayed host
+:nuclear.netwirc.tk 251 storm_bot :There are 1 users and 35 invisible on 4 servers
+:nuclear.netwirc.tk 252 storm_bot 10 :operator(s) online
+:nuclear.netwirc.tk 254 storm_bot 9 :channels formed
+:nuclear.netwirc.tk 255 storm_bot :I have 19 clients and 3 servers
+:nuclear.netwirc.tk 265 storm_bot 19 21 :Current local users 19, max 21
+:nuclear.netwirc.tk 266 storm_bot 36 40 :Current global users 36, max 40
+:nuclear.netwirc.tk 422 storm_bot :MOTD File is missing
+:storm_bot MODE storm_bot :+iwx
+:nuclear.netwirc.tk 332 storm_bot #a11y :Welcome to #a11y, because we are more than this!
+:nuclear.netwirc.tk 333 storm_bot #a11y Jeremiah 1472770664
+:nuclear.netwirc.tk 353 storm_bot = #a11y :storm_bot xogium ~Jeremiah chrys-tablet xogium_ mariachiac @chrys @storm_dragon Tsadoq lilmike @PrinceKyle Virgo Mysterytrain &data
+:nuclear.netwirc.tk 366 storm_bot #a11y :End of /NAMES list.
+Trying 163.172.147.66...
+Connected to irc.netwirc.tk.
+Escape character is '^]'.
+:tardis.netwirc.tk NOTICE * :*** Looking up your hostname...
+:tardis.netwirc.tk NOTICE * :*** Couldn't resolve your hostname; using your IP address instead
+:tardis.netwirc.tk 001 storm_bot :Welcome to the NetwIRC IRC Network storm_bot!storm_bot@137.118.216.238
+:tardis.netwirc.tk 002 storm_bot :Your host is tardis.netwirc.tk, running version UnrealIRCd-4.0.3.1
+:tardis.netwirc.tk 003 storm_bot :This server was created Thu Jun 2 2016 at 04:48:56 UTC
+:tardis.netwirc.tk 004 storm_bot tardis.netwirc.tk UnrealIRCd-4.0.3.1 iowrsxzdHtIRqpWGTSB lvhopsmntikraqbeIzMQNRTOVKDdGLPZSCcf
+:tardis.netwirc.tk 005 storm_bot UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=25 CHANLIMIT=#:25 MAXLIST=b:60,e:60,I:60 MAXNICKLEN=30 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 :are supported by this server
+:tardis.netwirc.tk 005 storm_bot MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kLf,l,psmntirzMQNRTOVKDdGPZSCc NETWORK=NetwIRC CASEMAPPING=ascii EXTBAN=~,SOcaRrnqj ELIST=MNUCT :are supported by this server
+:tardis.netwirc.tk 005 storm_bot STATUSMSG=~&@%+ EXCEPTS INVEX CMDS=USERIP,STARTTLS,KNOCK,DCCALLOW,MAP :are supported by this server
+:tardis.netwirc.tk 396 storm_bot 6A229115.A61C7C6C.37E689BC.IP :is now your displayed host
+:tardis.netwirc.tk 251 storm_bot :There are 1 users and 35 invisible on 4 servers
+:tardis.netwirc.tk 252 storm_bot 10 :operator(s) online
+:tardis.netwirc.tk 254 storm_bot 9 :channels formed
+:tardis.netwirc.tk 255 storm_bot :I have 4 clients and 1 servers
+:tardis.netwirc.tk 265 storm_bot 4 11 :Current local users 4, max 11
+:tardis.netwirc.tk 266 storm_bot 36 40 :Current global users 36, max 40
+:tardis.netwirc.tk 422 storm_bot :MOTD File is missing
+:storm_bot MODE storm_bot :+iwx
+:tardis.netwirc.tk 332 storm_bot #a11y :Welcome to #a11y, because we are more than this!
+:tardis.netwirc.tk 333 storm_bot #a11y Jeremiah 1472770664
+:tardis.netwirc.tk 353 storm_bot = #a11y :storm_bot xogium ~Jeremiah chrys-tablet xogium_ mariachiac @chrys @storm_dragon Tsadoq &data Mysterytrain Virgo @PrinceKyle lilmike
+:tardis.netwirc.tk 366 storm_bot #a11y :End of /NAMES list.
+Trying 163.172.147.66...
+Connected to irc.netwirc.tk.
+Escape character is '^]'.
+:tardis.netwirc.tk NOTICE * :*** Looking up your hostname...
+:tardis.netwirc.tk NOTICE * :*** Couldn't resolve your hostname; using your IP address instead
+:tardis.netwirc.tk 001 storm_bot :Welcome to the NetwIRC IRC Network storm_bot!storm_bot@137.118.216.238
+:tardis.netwirc.tk 002 storm_bot :Your host is tardis.netwirc.tk, running version UnrealIRCd-4.0.3.1
+:tardis.netwirc.tk 003 storm_bot :This server was created Thu Jun 2 2016 at 04:48:56 UTC
+:tardis.netwirc.tk 004 storm_bot tardis.netwirc.tk UnrealIRCd-4.0.3.1 iowrsxzdHtIRqpWGTSB lvhopsmntikraqbeIzMQNRTOVKDdGLPZSCcf
+:tardis.netwirc.tk 005 storm_bot UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=25 CHANLIMIT=#:25 MAXLIST=b:60,e:60,I:60 MAXNICKLEN=30 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 :are supported by this server
+:tardis.netwirc.tk 005 storm_bot MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kLf,l,psmntirzMQNRTOVKDdGPZSCc NETWORK=NetwIRC CASEMAPPING=ascii EXTBAN=~,SOcaRrnqj ELIST=MNUCT :are supported by this server
+:tardis.netwirc.tk 005 storm_bot STATUSMSG=~&@%+ EXCEPTS INVEX CMDS=USERIP,STARTTLS,KNOCK,DCCALLOW,MAP :are supported by this server
+:tardis.netwirc.tk 396 storm_bot 6A229115.A61C7C6C.37E689BC.IP :is now your displayed host
+:tardis.netwirc.tk 251 storm_bot :There are 1 users and 35 invisible on 4 servers
+:tardis.netwirc.tk 252 storm_bot 10 :operator(s) online
+:tardis.netwirc.tk 254 storm_bot 9 :channels formed
+:tardis.netwirc.tk 255 storm_bot :I have 4 clients and 1 servers
+:tardis.netwirc.tk 265 storm_bot 4 11 :Current local users 4, max 11
+:tardis.netwirc.tk 266 storm_bot 36 40 :Current global users 36, max 40
+:tardis.netwirc.tk 422 storm_bot :MOTD File is missing
+:storm_bot MODE storm_bot :+iwx
+:tardis.netwirc.tk 332 storm_bot #a11y :Welcome to #a11y, because we are more than this!
+:tardis.netwirc.tk 333 storm_bot #a11y Jeremiah 1472770664
+:tardis.netwirc.tk 353 storm_bot = #a11y :storm_bot xogium ~Jeremiah chrys-tablet xogium_ mariachiac @chrys @storm_dragon Tsadoq &data Mysterytrain Virgo @PrinceKyle lilmike
+:tardis.netwirc.tk 366 storm_bot #a11y :End of /NAMES list.
+Trying 163.172.137.39...
+Connected to irc.netwirc.tk.
+Escape character is '^]'.
+:nuclear.netwirc.tk NOTICE * :*** Looking up your hostname...
+:nuclear.netwirc.tk NOTICE * :*** Couldn't resolve your hostname; using your IP address instead
+:nuclear.netwirc.tk 001 storm_bot :Welcome to the NetwIRC IRC Network storm_bot!storm_bot@137.118.216.238
+:nuclear.netwirc.tk 002 storm_bot :Your host is nuclear.netwirc.tk, running version UnrealIRCd-4.0.5
+:nuclear.netwirc.tk 003 storm_bot :This server was created Sat Jul 30 2016 at 18:16:53 UTC
+:nuclear.netwirc.tk 004 storm_bot nuclear.netwirc.tk UnrealIRCd-4.0.5 iowrsxzdHtIRqpWGTSB lvhopsmntikraqbeIzMQNRTOVKDdGLPZSCcf
+:nuclear.netwirc.tk 005 storm_bot CMDS=USERIP,STARTTLS,KNOCK,DCCALLOW,MAP UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=25 CHANLIMIT=#:25 MAXLIST=b:60,e:60,I:60 MAXNICKLEN=30 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 :are supported by this server
+:nuclear.netwirc.tk 005 storm_bot AWAYLEN=307 MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kLf,l,psmntirzMQNRTOVKDdGPZSCc NETWORK=NetwIRC CASEMAPPING=ascii EXTBAN=~,SOcaRrnqj :are supported by this server
+:nuclear.netwirc.tk 005 storm_bot ELIST=MNUCT STATUSMSG=~&@%+ EXCEPTS INVEX :are supported by this server
+:nuclear.netwirc.tk 396 storm_bot 6A229115.A61C7C6C.37E689BC.IP :is now your displayed host
+:nuclear.netwirc.tk 251 storm_bot :There are 1 users and 35 invisible on 4 servers
+:nuclear.netwirc.tk 252 storm_bot 10 :operator(s) online
+:nuclear.netwirc.tk 254 storm_bot 9 :channels formed
+:nuclear.netwirc.tk 255 storm_bot :I have 19 clients and 3 servers
+:nuclear.netwirc.tk 265 storm_bot 19 21 :Current local users 19, max 21
+:nuclear.netwirc.tk 266 storm_bot 36 40 :Current global users 36, max 40
+:nuclear.netwirc.tk 422 storm_bot :MOTD File is missing
+:storm_bot MODE storm_bot :+iwx
+:nuclear.netwirc.tk 332 storm_bot #a11y :Welcome to #a11y, because we are more than this!
+:nuclear.netwirc.tk 333 storm_bot #a11y Jeremiah 1472770664
+:nuclear.netwirc.tk 353 storm_bot = #a11y :storm_bot xogium ~Jeremiah chrys-tablet xogium_ mariachiac @chrys @storm_dragon Tsadoq lilmike @PrinceKyle Virgo Mysterytrain &data
 :nuclear.netwirc.tk 366 storm_bot #a11y :End of /NAMES list.
 Trying 71.69.198.142...
 Connected to irc.netwirc.tk.
@@ -139,15 +186,290 @@ Escape character is '^]'.
 :ender.netwirc.tk 005 storm_bot MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kLf,l,psmntirzMQNRTOVKDdGPZSCc NETWORK=NetwIRC CASEMAPPING=ascii EXTBAN=~,SOcaRrnqj ELIST=MNUCT :are supported by this server
 :ender.netwirc.tk 005 storm_bot STATUSMSG=~&@%+ EXCEPTS INVEX CMDS=USERIP,STARTTLS,KNOCK,DCCALLOW,MAP :are supported by this server
 :ender.netwirc.tk 396 storm_bot 6A229115.A61C7C6C.37E689BC.IP :is now your displayed host
-:ender.netwirc.tk 251 storm_bot :There are 1 users and 34 invisible on 4 servers
+:ender.netwirc.tk 251 storm_bot :There are 1 users and 35 invisible on 4 servers
 :ender.netwirc.tk 252 storm_bot 10 :operator(s) online
 :ender.netwirc.tk 254 storm_bot 9 :channels formed
-:ender.netwirc.tk 255 storm_bot :I have 8 clients and 1 servers
-:ender.netwirc.tk 265 storm_bot 8 13 :Current local users 8, max 13
-:ender.netwirc.tk 266 storm_bot 35 40 :Current global users 35, max 40
+:ender.netwirc.tk 255 storm_bot :I have 7 clients and 1 servers
+:ender.netwirc.tk 265 storm_bot 7 13 :Current local users 7, max 13
+:ender.netwirc.tk 266 storm_bot 36 40 :Current global users 36, max 40
 :ender.netwirc.tk 422 storm_bot :MOTD File is missing
 :storm_bot MODE storm_bot :+iwx
 :ender.netwirc.tk 332 storm_bot #a11y :Welcome to #a11y, because we are more than this!
 :ender.netwirc.tk 333 storm_bot #a11y Jeremiah 1472770664
-:ender.netwirc.tk 353 storm_bot = #a11y :storm_bot ~Jeremiah Annalyn xogium xogium_ mariachiac @chrys @storm_dragon Tsadoq lilmike @PrinceKyle Virgo Mysterytrain &data
+:ender.netwirc.tk 353 storm_bot = #a11y :storm_bot xogium ~Jeremiah chrys-tablet xogium_ mariachiac @chrys @storm_dragon Tsadoq lilmike @PrinceKyle Virgo Mysterytrain &data
 :ender.netwirc.tk 366 storm_bot #a11y :End of /NAMES list.
+Trying 163.172.147.66...
+Connected to irc.netwirc.tk.
+Escape character is '^]'.
+:tardis.netwirc.tk NOTICE * :*** Looking up your hostname...
+:tardis.netwirc.tk NOTICE * :*** Couldn't resolve your hostname; using your IP address instead
+:tardis.netwirc.tk 001 storm_bot :Welcome to the NetwIRC IRC Network storm_bot!storm_bot@137.118.216.238
+:tardis.netwirc.tk 002 storm_bot :Your host is tardis.netwirc.tk, running version UnrealIRCd-4.0.3.1
+:tardis.netwirc.tk 003 storm_bot :This server was created Thu Jun 2 2016 at 04:48:56 UTC
+:tardis.netwirc.tk 004 storm_bot tardis.netwirc.tk UnrealIRCd-4.0.3.1 iowrsxzdHtIRqpWGTSB lvhopsmntikraqbeIzMQNRTOVKDdGLPZSCcf
+:tardis.netwirc.tk 005 storm_bot UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=25 CHANLIMIT=#:25 MAXLIST=b:60,e:60,I:60 MAXNICKLEN=30 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 :are supported by this server
+:tardis.netwirc.tk 005 storm_bot MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kLf,l,psmntirzMQNRTOVKDdGPZSCc NETWORK=NetwIRC CASEMAPPING=ascii EXTBAN=~,SOcaRrnqj ELIST=MNUCT :are supported by this server
+:tardis.netwirc.tk 005 storm_bot STATUSMSG=~&@%+ EXCEPTS INVEX CMDS=USERIP,STARTTLS,KNOCK,DCCALLOW,MAP :are supported by this server
+:tardis.netwirc.tk 396 storm_bot 6A229115.A61C7C6C.37E689BC.IP :is now your displayed host
+:tardis.netwirc.tk 251 storm_bot :There are 1 users and 35 invisible on 4 servers
+:tardis.netwirc.tk 252 storm_bot 10 :operator(s) online
+:tardis.netwirc.tk 254 storm_bot 9 :channels formed
+:tardis.netwirc.tk 255 storm_bot :I have 4 clients and 1 servers
+:tardis.netwirc.tk 265 storm_bot 4 11 :Current local users 4, max 11
+:tardis.netwirc.tk 266 storm_bot 36 40 :Current global users 36, max 40
+:tardis.netwirc.tk 422 storm_bot :MOTD File is missing
+:storm_bot MODE storm_bot :+iwx
+:tardis.netwirc.tk 332 storm_bot #a11y :Welcome to #a11y, because we are more than this!
+:tardis.netwirc.tk 333 storm_bot #a11y Jeremiah 1472770664
+:tardis.netwirc.tk 353 storm_bot = #a11y :storm_bot xogium ~Jeremiah chrys-tablet xogium_ mariachiac @chrys @storm_dragon Tsadoq &data Mysterytrain Virgo @PrinceKyle lilmike
+:tardis.netwirc.tk 366 storm_bot #a11y :End of /NAMES list.
+Trying 163.172.137.39...
+Connected to irc.netwirc.tk.
+Escape character is '^]'.
+:nuclear.netwirc.tk NOTICE * :*** Looking up your hostname...
+:nuclear.netwirc.tk NOTICE * :*** Couldn't resolve your hostname; using your IP address instead
+:nuclear.netwirc.tk 001 storm_bot :Welcome to the NetwIRC IRC Network storm_bot!storm_bot@137.118.216.238
+:nuclear.netwirc.tk 002 storm_bot :Your host is nuclear.netwirc.tk, running version UnrealIRCd-4.0.5
+:nuclear.netwirc.tk 003 storm_bot :This server was created Sat Jul 30 2016 at 18:16:53 UTC
+:nuclear.netwirc.tk 004 storm_bot nuclear.netwirc.tk UnrealIRCd-4.0.5 iowrsxzdHtIRqpWGTSB lvhopsmntikraqbeIzMQNRTOVKDdGLPZSCcf
+:nuclear.netwirc.tk 005 storm_bot CMDS=USERIP,STARTTLS,KNOCK,DCCALLOW,MAP UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=25 CHANLIMIT=#:25 MAXLIST=b:60,e:60,I:60 MAXNICKLEN=30 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 :are supported by this server
+:nuclear.netwirc.tk 005 storm_bot AWAYLEN=307 MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kLf,l,psmntirzMQNRTOVKDdGPZSCc NETWORK=NetwIRC CASEMAPPING=ascii EXTBAN=~,SOcaRrnqj :are supported by this server
+:nuclear.netwirc.tk 005 storm_bot ELIST=MNUCT STATUSMSG=~&@%+ EXCEPTS INVEX :are supported by this server
+:nuclear.netwirc.tk 396 storm_bot 6A229115.A61C7C6C.37E689BC.IP :is now your displayed host
+:nuclear.netwirc.tk 251 storm_bot :There are 1 users and 35 invisible on 4 servers
+:nuclear.netwirc.tk 252 storm_bot 10 :operator(s) online
+:nuclear.netwirc.tk 254 storm_bot 9 :channels formed
+:nuclear.netwirc.tk 255 storm_bot :I have 19 clients and 3 servers
+:nuclear.netwirc.tk 265 storm_bot 19 21 :Current local users 19, max 21
+:nuclear.netwirc.tk 266 storm_bot 36 40 :Current global users 36, max 40
+:nuclear.netwirc.tk 422 storm_bot :MOTD File is missing
+:storm_bot MODE storm_bot :+iwx
+:nuclear.netwirc.tk 332 storm_bot #a11y :Welcome to #a11y, because we are more than this!
+:nuclear.netwirc.tk 333 storm_bot #a11y Jeremiah 1472770664
+:nuclear.netwirc.tk 353 storm_bot = #a11y :storm_bot xogium ~Jeremiah chrys-tablet xogium_ mariachiac @chrys @storm_dragon Tsadoq lilmike @PrinceKyle Virgo Mysterytrain &data
+:nuclear.netwirc.tk 366 storm_bot #a11y :End of /NAMES list.
+Trying 71.69.198.142...
+Connected to irc.netwirc.tk.
+Escape character is '^]'.
+:ender.netwirc.tk NOTICE * :*** Looking up your hostname...
+:ender.netwirc.tk NOTICE * :*** Couldn't resolve your hostname; using your IP address instead
+:ender.netwirc.tk 001 storm_bot :Welcome to the NetwIRC IRC Network storm_bot!storm_bot@137.118.216.238
+:ender.netwirc.tk 002 storm_bot :Your host is ender.netwirc.tk, running version UnrealIRCd-4.0.3.1
+:ender.netwirc.tk 003 storm_bot :This server was created Thu Jun 2 2016 at 01:57:02 UTC
+:ender.netwirc.tk 004 storm_bot ender.netwirc.tk UnrealIRCd-4.0.3.1 iowrsxzdHtIRqpWGTSB lvhopsmntikraqbeIzMQNRTOVKDdGLPZSCcf
+:ender.netwirc.tk 005 storm_bot UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=25 CHANLIMIT=#:25 MAXLIST=b:60,e:60,I:60 MAXNICKLEN=30 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 :are supported by this server
+:ender.netwirc.tk 005 storm_bot MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kLf,l,psmntirzMQNRTOVKDdGPZSCc NETWORK=NetwIRC CASEMAPPING=ascii EXTBAN=~,SOcaRrnqj ELIST=MNUCT :are supported by this server
+:ender.netwirc.tk 005 storm_bot STATUSMSG=~&@%+ EXCEPTS INVEX CMDS=USERIP,STARTTLS,KNOCK,DCCALLOW,MAP :are supported by this server
+:ender.netwirc.tk 396 storm_bot 6A229115.A61C7C6C.37E689BC.IP :is now your displayed host
+:ender.netwirc.tk 251 storm_bot :There are 1 users and 35 invisible on 4 servers
+:ender.netwirc.tk 252 storm_bot 10 :operator(s) online
+:ender.netwirc.tk 254 storm_bot 9 :channels formed
+:ender.netwirc.tk 255 storm_bot :I have 7 clients and 1 servers
+:ender.netwirc.tk 265 storm_bot 7 13 :Current local users 7, max 13
+:ender.netwirc.tk 266 storm_bot 36 40 :Current global users 36, max 40
+:ender.netwirc.tk 422 storm_bot :MOTD File is missing
+:storm_bot MODE storm_bot :+iwx
+:ender.netwirc.tk 332 storm_bot #a11y :Welcome to #a11y, because we are more than this!
+:ender.netwirc.tk 333 storm_bot #a11y Jeremiah 1472770664
+:ender.netwirc.tk 353 storm_bot = #a11y :storm_bot xogium ~Jeremiah chrys-tablet xogium_ mariachiac @chrys @storm_dragon Tsadoq lilmike @PrinceKyle Virgo Mysterytrain &data
+:ender.netwirc.tk 366 storm_bot #a11y :End of /NAMES list.
+Trying 71.69.198.142...
+Connected to irc.netwirc.tk.
+Escape character is '^]'.
+:ender.netwirc.tk NOTICE * :*** Looking up your hostname...
+:ender.netwirc.tk NOTICE * :*** Couldn't resolve your hostname; using your IP address instead
+:ender.netwirc.tk 001 storm_bot :Welcome to the NetwIRC IRC Network storm_bot!storm_bot@137.118.216.238
+:ender.netwirc.tk 002 storm_bot :Your host is ender.netwirc.tk, running version UnrealIRCd-4.0.3.1
+:ender.netwirc.tk 003 storm_bot :This server was created Thu Jun 2 2016 at 01:57:02 UTC
+:ender.netwirc.tk 004 storm_bot ender.netwirc.tk UnrealIRCd-4.0.3.1 iowrsxzdHtIRqpWGTSB lvhopsmntikraqbeIzMQNRTOVKDdGLPZSCcf
+:ender.netwirc.tk 005 storm_bot UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=25 CHANLIMIT=#:25 MAXLIST=b:60,e:60,I:60 MAXNICKLEN=30 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 :are supported by this server
+:ender.netwirc.tk 005 storm_bot MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kLf,l,psmntirzMQNRTOVKDdGPZSCc NETWORK=NetwIRC CASEMAPPING=ascii EXTBAN=~,SOcaRrnqj ELIST=MNUCT :are supported by this server
+:ender.netwirc.tk 005 storm_bot STATUSMSG=~&@%+ EXCEPTS INVEX CMDS=USERIP,STARTTLS,KNOCK,DCCALLOW,MAP :are supported by this server
+:ender.netwirc.tk 396 storm_bot 6A229115.A61C7C6C.37E689BC.IP :is now your displayed host
+:ender.netwirc.tk 251 storm_bot :There are 1 users and 35 invisible on 4 servers
+:ender.netwirc.tk 252 storm_bot 10 :operator(s) online
+:ender.netwirc.tk 254 storm_bot 9 :channels formed
+:ender.netwirc.tk 255 storm_bot :I have 7 clients and 1 servers
+:ender.netwirc.tk 265 storm_bot 7 13 :Current local users 7, max 13
+:ender.netwirc.tk 266 storm_bot 36 40 :Current global users 36, max 40
+:ender.netwirc.tk 422 storm_bot :MOTD File is missing
+:storm_bot MODE storm_bot :+iwx
+:ender.netwirc.tk 332 storm_bot #a11y :Welcome to #a11y, because we are more than this!
+:ender.netwirc.tk 333 storm_bot #a11y Jeremiah 1472770664
+:ender.netwirc.tk 353 storm_bot = #a11y :storm_bot xogium ~Jeremiah chrys-tablet xogium_ mariachiac @chrys @storm_dragon Tsadoq lilmike @PrinceKyle Virgo Mysterytrain &data
+:ender.netwirc.tk 366 storm_bot #a11y :End of /NAMES list.
+Trying 163.172.147.66...
+Connected to irc.netwirc.tk.
+Escape character is '^]'.
+:tardis.netwirc.tk NOTICE * :*** Looking up your hostname...
+:tardis.netwirc.tk NOTICE * :*** Couldn't resolve your hostname; using your IP address instead
+:tardis.netwirc.tk 001 storm_bot :Welcome to the NetwIRC IRC Network storm_bot!storm_bot@137.118.216.238
+:tardis.netwirc.tk 002 storm_bot :Your host is tardis.netwirc.tk, running version UnrealIRCd-4.0.3.1
+:tardis.netwirc.tk 003 storm_bot :This server was created Thu Jun 2 2016 at 04:48:56 UTC
+:tardis.netwirc.tk 004 storm_bot tardis.netwirc.tk UnrealIRCd-4.0.3.1 iowrsxzdHtIRqpWGTSB lvhopsmntikraqbeIzMQNRTOVKDdGLPZSCcf
+:tardis.netwirc.tk 005 storm_bot UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=25 CHANLIMIT=#:25 MAXLIST=b:60,e:60,I:60 MAXNICKLEN=30 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 :are supported by this server
+:tardis.netwirc.tk 005 storm_bot MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kLf,l,psmntirzMQNRTOVKDdGPZSCc NETWORK=NetwIRC CASEMAPPING=ascii EXTBAN=~,SOcaRrnqj ELIST=MNUCT :are supported by this server
+:tardis.netwirc.tk 005 storm_bot STATUSMSG=~&@%+ EXCEPTS INVEX CMDS=USERIP,STARTTLS,KNOCK,DCCALLOW,MAP :are supported by this server
+:tardis.netwirc.tk 396 storm_bot 6A229115.A61C7C6C.37E689BC.IP :is now your displayed host
+:tardis.netwirc.tk 251 storm_bot :There are 1 users and 35 invisible on 4 servers
+:tardis.netwirc.tk 252 storm_bot 10 :operator(s) online
+:tardis.netwirc.tk 254 storm_bot 9 :channels formed
+:tardis.netwirc.tk 255 storm_bot :I have 4 clients and 1 servers
+:tardis.netwirc.tk 265 storm_bot 4 11 :Current local users 4, max 11
+:tardis.netwirc.tk 266 storm_bot 36 40 :Current global users 36, max 40
+:tardis.netwirc.tk 422 storm_bot :MOTD File is missing
+:storm_bot MODE storm_bot :+iwx
+:tardis.netwirc.tk 332 storm_bot #a11y :Welcome to #a11y, because we are more than this!
+:tardis.netwirc.tk 333 storm_bot #a11y Jeremiah 1472770664
+:tardis.netwirc.tk 353 storm_bot = #a11y :storm_bot xogium ~Jeremiah chrys-tablet xogium_ mariachiac @chrys @storm_dragon Tsadoq &data Mysterytrain Virgo @PrinceKyle lilmike
+:tardis.netwirc.tk 366 storm_bot #a11y :End of /NAMES list.
+Trying 71.69.198.142...
+Connected to irc.netwirc.tk.
+Escape character is '^]'.
+:ender.netwirc.tk NOTICE * :*** Looking up your hostname...
+:ender.netwirc.tk NOTICE * :*** Couldn't resolve your hostname; using your IP address instead
+:ender.netwirc.tk 001 storm_bot :Welcome to the NetwIRC IRC Network storm_bot!storm_bot@137.118.216.238
+:ender.netwirc.tk 002 storm_bot :Your host is ender.netwirc.tk, running version UnrealIRCd-4.0.3.1
+:ender.netwirc.tk 003 storm_bot :This server was created Thu Jun 2 2016 at 01:57:02 UTC
+:ender.netwirc.tk 004 storm_bot ender.netwirc.tk UnrealIRCd-4.0.3.1 iowrsxzdHtIRqpWGTSB lvhopsmntikraqbeIzMQNRTOVKDdGLPZSCcf
+:ender.netwirc.tk 005 storm_bot UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=25 CHANLIMIT=#:25 MAXLIST=b:60,e:60,I:60 MAXNICKLEN=30 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 :are supported by this server
+:ender.netwirc.tk 005 storm_bot MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kLf,l,psmntirzMQNRTOVKDdGPZSCc NETWORK=NetwIRC CASEMAPPING=ascii EXTBAN=~,SOcaRrnqj ELIST=MNUCT :are supported by this server
+:ender.netwirc.tk 005 storm_bot STATUSMSG=~&@%+ EXCEPTS INVEX CMDS=USERIP,STARTTLS,KNOCK,DCCALLOW,MAP :are supported by this server
+:ender.netwirc.tk 396 storm_bot 6A229115.A61C7C6C.37E689BC.IP :is now your displayed host
+:ender.netwirc.tk 251 storm_bot :There are 1 users and 35 invisible on 4 servers
+:ender.netwirc.tk 252 storm_bot 10 :operator(s) online
+:ender.netwirc.tk 254 storm_bot 9 :channels formed
+:ender.netwirc.tk 255 storm_bot :I have 7 clients and 1 servers
+:ender.netwirc.tk 265 storm_bot 7 13 :Current local users 7, max 13
+:ender.netwirc.tk 266 storm_bot 36 40 :Current global users 36, max 40
+:ender.netwirc.tk 422 storm_bot :MOTD File is missing
+:storm_bot MODE storm_bot :+iwx
+:ender.netwirc.tk 332 storm_bot #a11y :Welcome to #a11y, because we are more than this!
+:ender.netwirc.tk 333 storm_bot #a11y Jeremiah 1472770664
+:ender.netwirc.tk 353 storm_bot = #a11y :storm_bot xogium ~Jeremiah chrys-tablet xogium_ mariachiac @chrys @storm_dragon Tsadoq lilmike @PrinceKyle Virgo Mysterytrain &data
+:ender.netwirc.tk 366 storm_bot #a11y :End of /NAMES list.
+Trying 71.69.198.142...
+Connected to irc.netwirc.tk.
+Escape character is '^]'.
+:ender.netwirc.tk NOTICE * :*** Looking up your hostname...
+:ender.netwirc.tk NOTICE * :*** Couldn't resolve your hostname; using your IP address instead
+:ender.netwirc.tk 001 storm_bot :Welcome to the NetwIRC IRC Network storm_bot!storm_bot@137.118.216.238
+:ender.netwirc.tk 002 storm_bot :Your host is ender.netwirc.tk, running version UnrealIRCd-4.0.3.1
+:ender.netwirc.tk 003 storm_bot :This server was created Thu Jun 2 2016 at 01:57:02 UTC
+:ender.netwirc.tk 004 storm_bot ender.netwirc.tk UnrealIRCd-4.0.3.1 iowrsxzdHtIRqpWGTSB lvhopsmntikraqbeIzMQNRTOVKDdGLPZSCcf
+:ender.netwirc.tk 005 storm_bot UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=25 CHANLIMIT=#:25 MAXLIST=b:60,e:60,I:60 MAXNICKLEN=30 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 :are supported by this server
+:ender.netwirc.tk 005 storm_bot MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kLf,l,psmntirzMQNRTOVKDdGPZSCc NETWORK=NetwIRC CASEMAPPING=ascii EXTBAN=~,SOcaRrnqj ELIST=MNUCT :are supported by this server
+:ender.netwirc.tk 005 storm_bot STATUSMSG=~&@%+ EXCEPTS INVEX CMDS=USERIP,STARTTLS,KNOCK,DCCALLOW,MAP :are supported by this server
+:ender.netwirc.tk 396 storm_bot 6A229115.A61C7C6C.37E689BC.IP :is now your displayed host
+:ender.netwirc.tk 251 storm_bot :There are 1 users and 35 invisible on 4 servers
+:ender.netwirc.tk 252 storm_bot 10 :operator(s) online
+:ender.netwirc.tk 254 storm_bot 9 :channels formed
+:ender.netwirc.tk 255 storm_bot :I have 7 clients and 1 servers
+:ender.netwirc.tk 265 storm_bot 7 13 :Current local users 7, max 13
+:ender.netwirc.tk 266 storm_bot 36 40 :Current global users 36, max 40
+:ender.netwirc.tk 422 storm_bot :MOTD File is missing
+:storm_bot MODE storm_bot :+iwx
+:ender.netwirc.tk 332 storm_bot #a11y :Welcome to #a11y, because we are more than this!
+:ender.netwirc.tk 333 storm_bot #a11y Jeremiah 1472770664
+:ender.netwirc.tk 353 storm_bot = #a11y :storm_bot xogium ~Jeremiah chrys-tablet xogium_ mariachiac @chrys @storm_dragon Tsadoq lilmike @PrinceKyle Virgo Mysterytrain &data
+:ender.netwirc.tk 366 storm_bot #a11y :End of /NAMES list.
+Trying 71.69.198.142...
+Connected to irc.netwirc.tk.
+Escape character is '^]'.
+:ender.netwirc.tk NOTICE * :*** Looking up your hostname...
+:ender.netwirc.tk NOTICE * :*** Couldn't resolve your hostname; using your IP address instead
+:ender.netwirc.tk 001 storm_bot :Welcome to the NetwIRC IRC Network storm_bot!storm_bot@137.118.216.238
+:ender.netwirc.tk 002 storm_bot :Your host is ender.netwirc.tk, running version UnrealIRCd-4.0.3.1
+:ender.netwirc.tk 003 storm_bot :This server was created Thu Jun 2 2016 at 01:57:02 UTC
+:ender.netwirc.tk 004 storm_bot ender.netwirc.tk UnrealIRCd-4.0.3.1 iowrsxzdHtIRqpWGTSB lvhopsmntikraqbeIzMQNRTOVKDdGLPZSCcf
+:ender.netwirc.tk 005 storm_bot UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=25 CHANLIMIT=#:25 MAXLIST=b:60,e:60,I:60 MAXNICKLEN=30 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 :are supported by this server
+:ender.netwirc.tk 005 storm_bot MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kLf,l,psmntirzMQNRTOVKDdGPZSCc NETWORK=NetwIRC CASEMAPPING=ascii EXTBAN=~,SOcaRrnqj ELIST=MNUCT :are supported by this server
+:ender.netwirc.tk 005 storm_bot STATUSMSG=~&@%+ EXCEPTS INVEX CMDS=USERIP,STARTTLS,KNOCK,DCCALLOW,MAP :are supported by this server
+:ender.netwirc.tk 396 storm_bot 6A229115.A61C7C6C.37E689BC.IP :is now your displayed host
+:ender.netwirc.tk 251 storm_bot :There are 1 users and 35 invisible on 4 servers
+:ender.netwirc.tk 252 storm_bot 10 :operator(s) online
+:ender.netwirc.tk 254 storm_bot 9 :channels formed
+:ender.netwirc.tk 255 storm_bot :I have 7 clients and 1 servers
+:ender.netwirc.tk 265 storm_bot 7 13 :Current local users 7, max 13
+:ender.netwirc.tk 266 storm_bot 36 40 :Current global users 36, max 40
+:ender.netwirc.tk 422 storm_bot :MOTD File is missing
+:storm_bot MODE storm_bot :+iwx
+:ender.netwirc.tk 332 storm_bot #a11y :Welcome to #a11y, because we are more than this!
+:ender.netwirc.tk 333 storm_bot #a11y Jeremiah 1472770664
+:ender.netwirc.tk 353 storm_bot = #a11y :storm_bot xogium ~Jeremiah chrys-tablet xogium_ mariachiac @chrys @storm_dragon Tsadoq lilmike @PrinceKyle Virgo Mysterytrain &data
+:ender.netwirc.tk 366 storm_bot #a11y :End of /NAMES list.
+Trying 163.172.137.39...
+Connected to irc.netwirc.tk.
+Escape character is '^]'.
+:nuclear.netwirc.tk NOTICE * :*** Looking up your hostname...
+:nuclear.netwirc.tk NOTICE * :*** Couldn't resolve your hostname; using your IP address instead
+:nuclear.netwirc.tk 001 storm_bot :Welcome to the NetwIRC IRC Network storm_bot!storm_bot@137.118.216.238
+:nuclear.netwirc.tk 002 storm_bot :Your host is nuclear.netwirc.tk, running version UnrealIRCd-4.0.5
+:nuclear.netwirc.tk 003 storm_bot :This server was created Sat Jul 30 2016 at 18:16:53 UTC
+:nuclear.netwirc.tk 004 storm_bot nuclear.netwirc.tk UnrealIRCd-4.0.5 iowrsxzdHtIRqpWGTSB lvhopsmntikraqbeIzMQNRTOVKDdGLPZSCcf
+:nuclear.netwirc.tk 005 storm_bot CMDS=USERIP,STARTTLS,KNOCK,DCCALLOW,MAP UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=25 CHANLIMIT=#:25 MAXLIST=b:60,e:60,I:60 MAXNICKLEN=30 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 :are supported by this server
+:nuclear.netwirc.tk 005 storm_bot AWAYLEN=307 MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kLf,l,psmntirzMQNRTOVKDdGPZSCc NETWORK=NetwIRC CASEMAPPING=ascii EXTBAN=~,SOcaRrnqj :are supported by this server
+:nuclear.netwirc.tk 005 storm_bot ELIST=MNUCT STATUSMSG=~&@%+ EXCEPTS INVEX :are supported by this server
+:nuclear.netwirc.tk 396 storm_bot 6A229115.A61C7C6C.37E689BC.IP :is now your displayed host
+:nuclear.netwirc.tk 251 storm_bot :There are 1 users and 35 invisible on 4 servers
+:nuclear.netwirc.tk 252 storm_bot 10 :operator(s) online
+:nuclear.netwirc.tk 254 storm_bot 9 :channels formed
+:nuclear.netwirc.tk 255 storm_bot :I have 19 clients and 3 servers
+:nuclear.netwirc.tk 265 storm_bot 19 21 :Current local users 19, max 21
+:nuclear.netwirc.tk 266 storm_bot 36 40 :Current global users 36, max 40
+:nuclear.netwirc.tk 422 storm_bot :MOTD File is missing
+:storm_bot MODE storm_bot :+iwx
+:nuclear.netwirc.tk 332 storm_bot #a11y :Welcome to #a11y, because we are more than this!
+:nuclear.netwirc.tk 333 storm_bot #a11y Jeremiah 1472770664
+:nuclear.netwirc.tk 353 storm_bot = #a11y :storm_bot xogium ~Jeremiah chrys-tablet xogium_ mariachiac @chrys @storm_dragon Tsadoq lilmike @PrinceKyle Virgo Mysterytrain &data
+:nuclear.netwirc.tk 366 storm_bot #a11y :End of /NAMES list.
+Trying 163.172.137.39...
+Connected to irc.netwirc.tk.
+Escape character is '^]'.
+:nuclear.netwirc.tk NOTICE * :*** Looking up your hostname...
+:nuclear.netwirc.tk NOTICE * :*** Couldn't resolve your hostname; using your IP address instead
+:nuclear.netwirc.tk 001 storm_bot :Welcome to the NetwIRC IRC Network storm_bot!storm_bot@137.118.216.238
+:nuclear.netwirc.tk 002 storm_bot :Your host is nuclear.netwirc.tk, running version UnrealIRCd-4.0.5
+:nuclear.netwirc.tk 003 storm_bot :This server was created Sat Jul 30 2016 at 18:16:53 UTC
+:nuclear.netwirc.tk 004 storm_bot nuclear.netwirc.tk UnrealIRCd-4.0.5 iowrsxzdHtIRqpWGTSB lvhopsmntikraqbeIzMQNRTOVKDdGLPZSCcf
+:nuclear.netwirc.tk 005 storm_bot CMDS=USERIP,STARTTLS,KNOCK,DCCALLOW,MAP UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=25 CHANLIMIT=#:25 MAXLIST=b:60,e:60,I:60 MAXNICKLEN=30 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 :are supported by this server
+:nuclear.netwirc.tk 005 storm_bot AWAYLEN=307 MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kLf,l,psmntirzMQNRTOVKDdGPZSCc NETWORK=NetwIRC CASEMAPPING=ascii EXTBAN=~,SOcaRrnqj :are supported by this server
+:nuclear.netwirc.tk 005 storm_bot ELIST=MNUCT STATUSMSG=~&@%+ EXCEPTS INVEX :are supported by this server
+:nuclear.netwirc.tk 396 storm_bot 6A229115.A61C7C6C.37E689BC.IP :is now your displayed host
+:nuclear.netwirc.tk 251 storm_bot :There are 1 users and 35 invisible on 4 servers
+:nuclear.netwirc.tk 252 storm_bot 10 :operator(s) online
+:nuclear.netwirc.tk 254 storm_bot 9 :channels formed
+:nuclear.netwirc.tk 255 storm_bot :I have 19 clients and 3 servers
+:nuclear.netwirc.tk 265 storm_bot 19 21 :Current local users 19, max 21
+:nuclear.netwirc.tk 266 storm_bot 36 40 :Current global users 36, max 40
+:nuclear.netwirc.tk 422 storm_bot :MOTD File is missing
+:storm_bot MODE storm_bot :+iwx
+:nuclear.netwirc.tk 332 storm_bot #a11y :Welcome to #a11y, because we are more than this!
+:nuclear.netwirc.tk 333 storm_bot #a11y Jeremiah 1472770664
+:nuclear.netwirc.tk 353 storm_bot = #a11y :storm_bot xogium ~Jeremiah chrys-tablet xogium_ mariachiac @chrys @storm_dragon Tsadoq lilmike @PrinceKyle Virgo Mysterytrain &data
+:nuclear.netwirc.tk 366 storm_bot #a11y :End of /NAMES list.
+Trying 163.172.147.66...
+Connected to irc.netwirc.tk.
+Escape character is '^]'.
+:tardis.netwirc.tk NOTICE * :*** Looking up your hostname...
+:tardis.netwirc.tk NOTICE * :*** Couldn't resolve your hostname; using your IP address instead
+:tardis.netwirc.tk 001 storm_bot :Welcome to the NetwIRC IRC Network storm_bot!storm_bot@137.118.216.238
+:tardis.netwirc.tk 002 storm_bot :Your host is tardis.netwirc.tk, running version UnrealIRCd-4.0.3.1
+:tardis.netwirc.tk 003 storm_bot :This server was created Thu Jun 2 2016 at 04:48:56 UTC
+:tardis.netwirc.tk 004 storm_bot tardis.netwirc.tk UnrealIRCd-4.0.3.1 iowrsxzdHtIRqpWGTSB lvhopsmntikraqbeIzMQNRTOVKDdGLPZSCcf
+:tardis.netwirc.tk 005 storm_bot UHNAMES NAMESX SAFELIST HCN MAXCHANNELS=25 CHANLIMIT=#:25 MAXLIST=b:60,e:60,I:60 MAXNICKLEN=30 NICKLEN=30 CHANNELLEN=32 TOPICLEN=307 KICKLEN=307 AWAYLEN=307 :are supported by this server
+:tardis.netwirc.tk 005 storm_bot MAXTARGETS=20 WALLCHOPS WATCH=128 WATCHOPTS=A SILENCE=15 MODES=12 CHANTYPES=# PREFIX=(qaohv)~&@%+ CHANMODES=beI,kLf,l,psmntirzMQNRTOVKDdGPZSCc NETWORK=NetwIRC CASEMAPPING=ascii EXTBAN=~,SOcaRrnqj ELIST=MNUCT :are supported by this server
+:tardis.netwirc.tk 005 storm_bot STATUSMSG=~&@%+ EXCEPTS INVEX CMDS=USERIP,STARTTLS,KNOCK,DCCALLOW,MAP :are supported by this server
+:tardis.netwirc.tk 396 storm_bot 6A229115.A61C7C6C.37E689BC.IP :is now your displayed host
+:tardis.netwirc.tk 251 storm_bot :There are 1 users and 35 invisible on 4 servers
+:tardis.netwirc.tk 252 storm_bot 10 :operator(s) online
+:tardis.netwirc.tk 254 storm_bot 9 :channels formed
+:tardis.netwirc.tk 255 storm_bot :I have 4 clients and 1 servers
+:tardis.netwirc.tk 265 storm_bot 4 11 :Current local users 4, max 11
+:tardis.netwirc.tk 266 storm_bot 36 40 :Current global users 36, max 40
+:tardis.netwirc.tk 422 storm_bot :MOTD File is missing
+:storm_bot MODE storm_bot :+iwx
+:tardis.netwirc.tk 332 storm_bot #a11y :Welcome to #a11y, because we are more than this!
+:tardis.netwirc.tk 333 storm_bot #a11y Jeremiah 1472770664
+:tardis.netwirc.tk 353 storm_bot = #a11y :storm_bot xogium ~Jeremiah chrys-tablet xogium_ mariachiac @chrys @storm_dragon Tsadoq &data Mysterytrain Virgo @PrinceKyle lilmike
+:tardis.netwirc.tk 366 storm_bot #a11y :End of /NAMES list.

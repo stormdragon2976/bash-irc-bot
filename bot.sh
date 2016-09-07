@@ -90,15 +90,20 @@ do
       # "#" would mean it's a channel
       if [ "$(echo "$from" | grep '#')" ]; then
         test "$(echo "$result" | grep ":$nick:")" || continue
-        will="${result#*"${nick}":}"
+        will="${result#*#*:}"
+        will="${will#*:}"
       else
-        will="${result#*"${nick}" :}"
+        will="${result:1}"
+        will="${will#* :}"
         from=$who
       fi
-      will="${will//# /}"
-      command="${will%% *}"
+      # Had to turn on globbing to remove all leading whitespace, then turn it off again afterwards.
+      shopt -s extglob
+      will="${will##*( )}"
+      shopt -u extglob
+      command="${will% *}"
       will="${will#* }"
-      if [ -z "$(ls modules/ | grep -i -- "$com")" ] || [ -z "$com" ]; then
+      if [ -z "$(ls modules/ | grep -i -- "$command")" ] || [ -z "$command" ]; then
         ./modules/help/help.sh "$who" "$from"
         continue
       fi
