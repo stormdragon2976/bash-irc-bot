@@ -110,7 +110,7 @@ do
       ./modules/$command/$command.sh "$who" "$from" "$will"
     ;;
     *)
-      echo "$result" | tee -a log
+      echo "$result" | tee -a "$log"
     ;;
   esac
 done
