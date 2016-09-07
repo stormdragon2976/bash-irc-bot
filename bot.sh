@@ -6,102 +6,106 @@ input=".botinput"
 
 close_bot()
 {
-  echo -en ":QUIT :$quitMessage\r\n" >> "$input"
+  echo -en "QUIT :$quitMessage\r\n" >> "$input"
   rm "$input"
   exit 0
 }
 
 trap close_bot EXIT $?
 
-echo "Starting session: $(date "+[%y:%m:%d %T]")" | tee  $log 
-echo "NICK $nick" > $input 
-echo "USER $user" >> $input
+echo "Session started $(date "+%I:%M%p%n    %A, %B %d, %Y")" | tee "$log" 
+echo "NICK $nick" | tee "$input"
+echo "USER $user" | tee -a "$input"
 for c in ${channel[@]} ; do
-  echo "JOIN #$c" | tee -a $input
+  echo "JOIN #$c" | tee -a "$input"
+  sleep 0.5
 done
 
-tail -f $input | telnet $server $port | while read res
+tail -f "$input" | telnet "$server" "$port" | while read result
 do
   # log the session
-  echo "$(date "+[%y:%m:%d %T]")$res" | tee -a $log
+  echo "$(date "+[$dateFormat]") $result" | tee -a "$log"
   # do things when you see output
-  case "$res" in
+  case "$result" in
     # respond to ping requests from the server
     PING*)
-      echo "$res" | sed "s/I/O/" >> $input 
+      echo "$result" | tee -a "$log"
+      echo "${result/I/O}" | tee -a "$input"
     ;;
     # for pings on nick/user
     *"You have not"*)
-      echo "JOIN #$channel" >> $input
+      echo "JOIN #$channel" | tee -a "$input"
     ;;
     # run when someone joins
     *"JOIN :#"*)
-      who=$(echo "$res" | perl -pe "s/:(.*)\!.*@.*/\1/")
-      chan="$(echo "$res" | cut -d '#' -f2)"
-      chan="#$chan"
+      who="${result%%!*}"
+      who="${who:1}"
+      from="${result#*#}"
+      from="#$from"
       if [ "$who" = "$nick" ]; then
        continue 
       fi
-      echo "MODE #$channel +o $who" >> $input
+      echo "MODE #$channel +o $who" | tee -a "$input"
       if [ "${greet^^}" = "TRUE" ]; then
-        ./triggers/greet/greet.sh $who $chan
+        ./triggers/greet/greet.sh "$who" "$from"
       fi
     ;;
     # run when someone leaves
     *"PART #"*)
-      who=$(echo "$res" | perl -pe "s/:(.*)\!.*@.*/\1/")
-      chan="$(echo "$res" | cut -d '#' -f2)"
-      chan="#$chan"
+      who="${result%%!*}"
+      who="${who:1}"
+      from="${result#*#}"
+      from="#$from"
       if [ "$who" = "$nick" ]; then
        continue 
       fi
-      echo "MODE #$channel +o $who" >> $input
       if [ "${leave^^}" = "TRUE" ]; then
-        ./triggers/bye/bye.sh $who $chan
+        ./triggers/bye/bye.sh "$who" "$from"
       fi
     ;;
     # run when a message is seen
     *PRIVMSG*)
-      echo "$res"
-      who=$(echo "$res" | perl -pe "s/:(.*)\!.*@.*/\1/")
-      from=$(echo "$res" | perl -pe "s/.*PRIVMSG (.*[#]?([a-zA-Z]|\-)*) :.*/\1/")
-      # This looks to be the spot where triggers should be called
+      echo "$result" | tee -a "$log"
+      who="${result%%!*}"
+      who="${who:1}"
+      from="${result#*#}"
+      from="#${from%% *}"
+      # Trigger stuff happens here.
       # Call link trigger if msg contains a link:
-      if [[ "$res" =~ .*http://|https://|www\..* ]]; then
-        ./triggers/link/link.sh "$who" "$from" "$res"
+      if [[ "$result" =~ .*http://|https://|www\..* ]]; then
+        ./triggers/link/link.sh "$who" "$from" "$result"
       # Although this calls modules, it triggers on text other than the bot's nick
-      elif [[ "$res" =~ ^.*PRIVMSG.*:[[:punct:]].* ]]; then
-        com="${res#*:[[:punct:]]}"
-        com="${com//# /}"
-        will="${com#* }"
-        com="${com%% *}"
-      if [ -z "$(ls modules/ | grep -i -- "$com")" ] || [ -z "$com" ]; then
+      elif [[ "$result" =~ ^.*PRIVMSG.*:[[:punct:]].* ]]; then
+        command="${result#*:[[:punct:]]}"
+        command="${command//# /}"
+        will="${command#* }"
+        command="${command%% *}"
+      if [ -z "$(ls modules/ | grep -i -- "$command")" ] || [ -z "$command" ]; then
         continue
       fi
-      ./modules/${com% *}/${com% *}.sh "$who" "$from" "$will"
+      ./modules/${command% *}/${command% *}.sh "$who" "$from" "$will"
       else
-      ./triggers/keywords/keywords.sh "$who" "$from" "$res"
+      ./triggers/keywords/keywords.sh "$who" "$from" "$result"
       fi
       # "#" would mean it's a channel
       if [ "$(echo "$from" | grep '#')" ]; then
-        test "$(echo "$res" | grep ":$nick:")" || continue
-        will=$(echo "$res" | perl -pe "s/.*:$nick:(.*)/\1/")
+        test "$(echo "$result" | grep ":$nick:")" || continue
+        will="${result#*"${nick}":}"
       else
-        will=$(echo "$res" | perl -pe "s/.*$nick :(.*)/\1/")
+        will="${result#*"${nick}" :}"
         from=$who
       fi
-      will=$(echo "$will" | perl -pe "s/^ +//")
-      com=$(echo "$will" | cut -d " " -f1)
+      will="${will//# /}"
+      command="${will%% *}"
+      will="${will#* }"
       if [ -z "$(ls modules/ | grep -i -- "$com")" ] || [ -z "$com" ]; then
         ./modules/help/help.sh "$who" "$from"
         continue
       fi
-      ./modules/$com/$com.sh $who $from $(echo "$will" | cut -d " " -f2-99)
+      ./modules/$command/$command.sh "$who" "$from" "$will"
     ;;
     *)
-      chan="$(echo "$res" | cut -d '#' -f2)"
-      chan="#$chan"
-      echo "$res"
+      echo "$result" | tee -a log
     ;;
   esac
 done

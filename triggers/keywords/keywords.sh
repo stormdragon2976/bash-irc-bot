@@ -10,9 +10,10 @@ shift
 # the variable $who contains the nick that caused the trigger.
 declare -A keywords
 keywords[linux]="msg \"$chan\" \"awesome!\""
-keywords[chicken]="msg \"$chan\" \"$who, I'm gonna grab me $(shuf -n1 -e "a case of beer" "a weed eater" "a 5 gallon jug of vaseline") and a $(shuf -n1 -e dead frozen live young) chicken, and have fun ALL NIGHT LONG!!!\""
+keywords[chicken]="msg \"$chan\" \"$who, I'm gonna grab me $(shuf -n1 -e "a case of beer" "a weed eater" "a 5 gallon jug of vaseline") and a $(shuf -n1 -e dead frozen live young) chicken, and $(shuf -n1 -e "have fun" "make chicks" "lay it like an egg") ALL NIGHT LONG!!!\""
+keywords[dragonforce]="msg \"$chan\" \"$who: I love DragonForce!!!\""
 
-wordList="$(echo "$@" | tr '[:space:]' $'\n' | sort -u)"
+wordList="$(echo "${@,,}" | tr '[:space:]' $'\n' | sort -u)"
 for w in ${wordList//[[:punct:]]/} ; do
 if [[ -n "${keywords[${w,,}]}" ]]; then
 eval ${keywords[${w,,}]}
