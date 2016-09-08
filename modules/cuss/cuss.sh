@@ -6,6 +6,7 @@ phrases=(
   "damn!"
   "fuck the fucking fuckers!"
   "fuck!"
+  "fuck. fuck. fuck. Mother mother fuck. Mother mother fuck fuck. Mother fuck mother fuck. Noise noise noise."
   "god damn it!"
   "motherfucker"
   "shit, piss, fuck, cunt, cocksucker, motherfucker, and tits."

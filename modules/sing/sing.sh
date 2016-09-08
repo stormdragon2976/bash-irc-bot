@@ -6,6 +6,8 @@ chan="$1"
 shift
 #get the lyric text into a variable
 trackName="${@//:/ - }"
+# Try to work around some common tags that will fail to find lyrics.
+trackName="${trackName/ - live/}"
 curl="$(command -v curl)"
 trackName="$(echo "$trackName" | sed -e "s/ /_/g" -e 's/([[:print:]]*)//g' -e "s/['\/\.]//g" -e 's/&/and/g' -e 's/ö/o/g')"
 artist="$(echo "${trackName,,}" | cut -d "-" -f 1 | sed -e 's/_$//' -e 's/^the_\(.*\)/\1_the/')"
