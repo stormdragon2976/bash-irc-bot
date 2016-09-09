@@ -10,4 +10,4 @@ fi
 if [ ${#weatherInfo} -lt 5 ]; then
 weatherInfo="Sorry $1, no weather found for $3."
 fi
-echo "$2" "$1: $weatherInfo"
+msg "$2" "$1: $weatherInfo"
