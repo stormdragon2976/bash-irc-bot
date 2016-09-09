@@ -1,2 +1,6 @@
 [ -f functions.sh ] && source functions.sh
-msg $2 "$1: pong"
+
+pong="${3:-ping}"
+pong="${pong//i/o}"
+pong="${pong//I/O}"
+msg "$2" "$1: $pong"
