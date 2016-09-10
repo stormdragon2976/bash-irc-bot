@@ -4,7 +4,8 @@ userNick="$1"
 shift
 chan="$1"
 shift
-snack="${@:-$(shuf -n1 -e\
+snack="${@#botsnack}"
+snack="${snack:-$(shuf -n1 -e\
   "BBQ microchips"\
   "BBQ corn nuts"\
   "steak")}"
