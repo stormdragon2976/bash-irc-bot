@@ -11,4 +11,4 @@ snack="${@:-$(shuf -n1 -e\
 thanks="$(shuf -n1 -e "Thank you" "You're so awesome" "You shouldn't have" "You rock")"
 favorite="$(shuf -n1 -e "my favorite" "yum yum" "this is bot heaven" "DELICIOUS")"
 
-echo "$chan" "$thanks $userNick: $snack! $favorite!"
+msg "$chan" "$thanks $userNick: $snack! $favorite!"
