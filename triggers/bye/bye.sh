@@ -9,5 +9,5 @@ bye=(
   "Bye $1." 
   "Alas $1, you will be missed."
 )
-msg "$2" "$1: ${bye[$(($RANDOM % ${#bye[@]}))]}"
+msg "$2" "${bye[$(($RANDOM % ${#bye[@]}))]}"
 esac
