@@ -19,3 +19,8 @@ if [[ -n "${keywords[${w,,}]}" ]]; then
 eval ${keywords[${w,,}]}
 fi
 done
+
+# Example of dealing with multi word triggers.
+if [[ "${wordList//[[:space:]]}" =~ .*nowplaying.* ]]; then
+act "$chan" "cranks the volume up to 11!"
+fi

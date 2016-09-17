@@ -18,7 +18,7 @@ else
   msg "$chan" "ok, $userNick, reminder in $time."
   reminderMessage="$@"
   if [[ "$reminderMessage" =~ ^[Tt]ell* ]]; then
-    userNick="$(echo "$reminderMessage" | rev | cut -d ' ' -f2 | rev)"
+    userNick="$(echo "${reminderMessage#[T|t]ell }" | cut -d ' ' -f1)"
 reminderMessage="${reminderMessage#[Tt]ell }"
 reminderMessage="${reminderMessage#* }"
   fi
