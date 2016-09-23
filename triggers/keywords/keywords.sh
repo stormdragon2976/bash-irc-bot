@@ -21,6 +21,6 @@ fi
 done
 
 # Example of dealing with multi word triggers.
-if [[ "${wordList//[[:space:]]}" =~ .*nowplaying.* ]]; then
+if [[ "${wordList//[[:space:]]/}" =~ nowplaying ]]; then
 act "$chan" "cranks the volume up to 11!"
 fi
