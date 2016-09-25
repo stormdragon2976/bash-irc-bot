@@ -24,5 +24,5 @@ done
 # Reset wordList without sorting it and with spaces removed.
 wordList="$(echo "${@,,}" | tr -d '[:space:]')"
 if [[ "$wordList" =~ .*nowplaying:.*-.* ]]; then
-act "$chan" "$(shuf -n1 -e "cranks the volume up to 11" "got soooo high at that show" "boogies down the the sound of the band")!"
+act "$chan" "$(shuf -n1 -e "cranks the volume up to 11" "got soooo high at that show" "boogies down to the sound of the band")!"
 fi
