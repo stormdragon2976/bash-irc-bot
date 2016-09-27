@@ -6,6 +6,7 @@ chan="$1"
 shift
 #get the lyric text into a variable
 trackName="${@//:/ - }"
+trackName="${@//Ö/o}"
 # Try to work around some common tags that will fail to find lyrics.
 trackName="${trackName//\//_}"
 curl="$(command -v curl)"
