@@ -47,7 +47,9 @@ do
       fi
       echo "MODE #$channel +o $who" | tee -a "$input"
       if [ "${greet^^}" = "TRUE" ]; then
-        ./triggers/greet/greet.sh "$who" "$from"
+set -f        
+./triggers/greet/greet.sh "$who" "$from"
+set +f
       fi
     ;;
     # run when someone leaves
@@ -60,7 +62,9 @@ do
        continue 
       fi
       if [ "${leave^^}" = "TRUE" ]; then
-        ./triggers/bye/bye.sh "$who" "$from"
+set -f        
+./triggers/bye/bye.sh "$who" "$from"
+set +f
       fi
     ;;
     # run when a message is seen
@@ -83,9 +87,15 @@ do
       if [ -z "$(ls modules/ | grep -i -- "$command")" ] || [ -z "$command" ]; then
         continue
       fi
-      ./modules/${command% *}/${command% *}.sh "$who" "$from" $will
+# Disable wildcards
+set -f      
+./modules/${command% *}/${command% *}.sh "$who" "$from" $will
+# Enable wildcards
+set +f
       else
+set -f
       ./triggers/keywords/keywords.sh "$who" "$from" "$result"
+ set +f
       fi
       # "#" would mean it's a channel
       if [ "$(echo "$from" | grep '#')" ]; then
@@ -104,10 +114,14 @@ do
       command="${will%% *}"
       will="${will#* }"
       if [ -z "$(ls modules/ | grep -i -- "$command")" ] || [ -z "$command" ]; then
-        ./modules/help/help.sh "$who" "$from"
+set -f        
+./modules/help/help.sh "$who" "$from"
+set +f
         continue
       fi
-      ./modules/$command/$command.sh "$who" "$from" $will
+set -f      
+./modules/$command/$command.sh "$who" "$from" $will
+set +f
     ;;
     *)
       echo "$result" | tee -a "$log"
