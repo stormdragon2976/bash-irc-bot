@@ -3,9 +3,12 @@
 advice=(
 'If love hurts, move slightly to the left.'
 'When in doubt, mumble.'
+"Some people are like clouds, when they disappear it's a beautiful day."
 'If love hurts, it may be the wrong hole.'
 'If your girlfriend or spouce starts smoking, slow down a bit, and try a lubricant.'
 'Never sweat the petty stuff, but always pet the sweatty stuff.'
+'Why do today what you can put off until tomorrow?'
+"It's called diet because all the other four letter words were taken."
 'Friends are like condoms, they protect you when things get hard.'
 'Friends are like butt cheeks, when shit separates them they always come back together.'
 "There are three kinds of people in this world, those who can count, and those who can't"
