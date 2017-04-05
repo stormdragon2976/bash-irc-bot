@@ -6,6 +6,8 @@ advice=(
 "Some people are like clouds, when they disappear it's a beautiful day."
 "Proof that light travels faster than sound? Some people appear bright until they speak."
 'If love hurts, it may be the wrong hole.'
+'He who smelt it delbt it.'
+'It is better to burp and taste it than to fart and waste it.'
 'If your girlfriend or spouce starts smoking, slow down a bit, and try a lubricant.'
 "Dogs have things figured out. If you can't eat it or fuck it, then piss on it and walk away."
 'Never sweat the petty stuff, but always pet the sweatty stuff.'
