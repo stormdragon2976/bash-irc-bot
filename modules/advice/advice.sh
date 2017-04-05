@@ -4,6 +4,7 @@ advice=(
 'If love hurts, move slightly to the left.'
 'When in doubt, mumble.'
 "Some people are like clouds, when they disappear it's a beautiful day."
+"Proof that light travels faster than sound? Some people appear bright until they speak."
 'If love hurts, it may be the wrong hole.'
 'If your girlfriend or spouce starts smoking, slow down a bit, and try a lubricant.'
 "Dogs have things figured out. If you can't eat it or fuck it, then piss on it and walk away."
