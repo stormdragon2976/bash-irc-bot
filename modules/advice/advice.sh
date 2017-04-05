@@ -4,6 +4,7 @@ advice=(
 'If love hurts, move slightly to the left.'
 'When in doubt, mumble.'
 "Some people are like clouds, when they disappear it's a beautiful day."
+"Proof that light travels faster than sound? Some people appear bright until they speak."
 'If love hurts, it may be the wrong hole.'
 'He who smelt it delbt it.'
 'It is better to burp and taste it than to fart and waste it.'
