@@ -1,5 +1,9 @@
 #!/bin/bash
 
+if [ "$(whoami)" = "root" ]; then
+echo "This bot should not be ran as root."
+exit 1
+fi
 [ -f functions.sh ] && source functions.sh
 [ -f bot.cfg ] && source bot.cfg
 input=".botinput"
