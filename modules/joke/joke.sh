@@ -1,6 +1,5 @@
 [ -f functions.sh ] && source functions.sh
 
-joke="$(curl -s 'http://tambal.azurewebsites.net/joke/random')"
-joke="${joke##*\":\"}"
-joke="${joke:0:-2}"
+joke="$(curl -s 'https://thatsagooden.tk/?api=txt&type=all')"
+joke="${joke//[[:space:]]/ }"
 msg "$2" "$joke"
