@@ -45,6 +45,13 @@ do
     if [ "$autoRejoinChannel" = "true" ]; then
         echo "JOIN #$c" | tee -a "$input"
     fi
+    if [ "$curseKicker" = "true" ]; then
+        kickerName="${result%!*}"
+        kickerName="${kickerName:1}"
+        kickerChannel="${result##*#}"
+        kickerChannel="#${kickerChannel%% *}"
+        msg "$kickerChannel" "$kickerName: $(shuf -e -n1 "fuck you" "go fuck yourself")!"
+    fi
     ;;
     # run when someone joins
     *"JOIN :#"*)
