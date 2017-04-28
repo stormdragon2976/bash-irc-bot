@@ -10,6 +10,7 @@ shift
 # the variable $who contains the nick that caused the trigger.
 declare -A keywords
 keywords[linux]="msg \"$chan\" \"Linux is $(shuf -n1 -e awesome God great lovely fantastic amazing wonderful)!\""
+keywords[windows]="msg \"$chan\" \"$(shuf -n1 -e "Apple got all pissed off because I farted in their store. It's not my falt they don't have Windows..." "Windows is dumb!" "Did you know that Micro Soft is Linda's pet name for Bill Gates?" "A computer without Windows is like a chocolate cake without the mustard." "Windows is stupid")!\""
 keywords[chicken]="msg \"$chan\" \"$who, I'm gonna grab me $(shuf -n1 -e "a case of beer" "a weed eater" "a 5 gallon jug of vaseline" "a can of wd40") and a $(shuf -n1 -e dead frozen live young) chicken, and $(shuf -n1 -e "have fun" 
 "make 
 chicks" 
