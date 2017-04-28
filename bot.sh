@@ -40,6 +40,12 @@ do
     *"You have not"*)
       echo "JOIN #$channel" | tee -a "$input"
     ;;
+    # Run on kick
+    :*!*@*" KICK "*" $nick :"*)
+    if [ "$autoRejoinChannel" = "true" ]; then
+        echo "JOIN #$c" | tee -a "$input"
+    fi
+    ;;
     # run when someone joins
     *"JOIN :#"*)
       who="${result%%!*}"
