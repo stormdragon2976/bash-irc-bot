@@ -11,16 +11,19 @@ shift
 declare -A keywords
 keywords[linux]="msg \"$chan\" \"Linux is $(shuf -n1 -e awesome God great lovely fantastic amazing wonderful)!\""
 keywords[windows]="msg \"$chan\" \"$(shuf -n1 -e "Apple got all pissed off because I farted in their store. It's not my falt they don't have Windows..." "Windows is dumb!" "Did you know that Micro Soft is Linda's pet name for Bill Gates?" "A computer without Windows is like a chocolate cake without the mustard." "Windows is stupid")!\""
-keywords[chicken]="msg \"$chan\" \"$who, I'm gonna grab me $(shuf -n1 -e "a case of beer" "a weed eater" "a 5 gallon jug of vaseline" "a can of wd40") and a $(shuf -n1 -e dead frozen live young) chicken, and $(shuf -n1 -e "have fun" 
-"make 
-chicks" 
-"lay it like an egg" "put my beak where it don't belong") ALL NIGHT LONG!!!\""
+keywords[emacs]="msg \"$chan\" \"$who, Real men use vim!\""
+keywords[emacspeak]="msg \"$chan\" \"$who, Real men use vim!\""
+keywords[nano]="msg \"$chan\" \"$who, Real men use vim!\""
+keywords[gedit]="msg \"$chan\" \"$who, Real men use vim!\""
+keywords[pluma]="msg \"$chan\" \"$who, Real men use vim!\""
+keywords[chicken]="msg \"$chan\" \"$who, I'm gonna grab me $(shuf -n1 -e "a case of beer" "a weed eater" "a 5 gallon jug of vaseline" "a can of wd40") and a $(shuf -n1 -e dead frozen live young) chicken, and $(shuf -n1 -e "have fun" "make chicks" "lay it like an egg" "put my beak where it don't belong") ALL NIGHT LONG!!!\""
 keywords[dragonforce]="msg \"$chan\" \"$who: I love DragonForce!!!\""
 
 wordList="$(echo "${@,,}" | tr '[:space:]' $'\n' | sort -u)"
 for w in ${wordList//[[:punct:]]/} ; do
-if [[ -n "${keywords[${w,,}]}" ]]; then
+if [[ -n "${keywords[${w,,}]}" && "$lastWordMatch" != "${keywords[${w,,}]}" ]]; then
 eval ${keywords[${w,,}]}
+lastWordMatch="${keywords[${w,,}]}"
 fi
 done
 
