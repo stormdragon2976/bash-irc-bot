@@ -10,8 +10,7 @@ shift
 # the variable $who contains the nick that caused the trigger.
 declare -A keywords
 keywords[linux]="msg \"$chan\" \"Linux is $(shuf -n1 -e awesome God great lovely fantastic amazing wonderful)!\""
-keywords[windows]="msg \"$chan\" \"$(shuf -n1 -e "Failure is not an option, it comes bundled with Windows!" "Apple got all pissed off because I farted in their store. It's not my falt they don't have Windows..." "Windows is dumb!" 
-"Did you know that Micro Soft is Linda's pet name for Bill Gates?" "A computer without Windows is like a chocolate cake without the mustard." "Windows is stupid" "In a world without walls and fences - who needs windows and gates?" "Windows, plug and pray." "Windows - Just another pain in the glass." "Windows, it's not pretty, it's not ugly, but it's pretty ugly.")!\""
+keywords[windows]="msg \"$chan\" \"$(shuf -n1 -e "Failure is not an option, it comes bundled with Windows!" "Apple got all pissed off because I farted in their store. It's not my falt they don't have Windows..." "Windows is dumb!" "Did you know that Micro Soft is Linda's pet name for Bill Gates?" "A computer without Windows is like a chocolate cake without the mustard." "Windows is stupid" "In a world without walls and fences - who needs windows and gates?" "Windows, plug and pray." "Windows - Just another pain in the glass." "Windows, it's not pretty, it's not ugly, but it's pretty ugly.")!\""
 keywords[emacs]="msg \"$chan\" \"$who, Real men use vim!\""
 keywords[emacspeak]="msg \"$chan\" \"$who, Real men use vim!\""
 keywords[nano]="msg \"$chan\" \"$who, Real men use vim!\""
