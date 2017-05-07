@@ -19,6 +19,9 @@ keywords[pluma]="msg \"$chan\" \"$who, Real men use vim!\""
 keywords[sbl]="msg \"$chan\" \"Oh yeah! Let's all use SBL, a CLI reader that doesn't compile or work! That's a great  idea! Or, here's an idea... USE FENRIR DUMB ASS!\""
 keywords[chicken]="msg \"$chan\" \"$who, I'm gonna grab me $(shuf -n1 -e "a case of beer" "a weed eater" "a 5 gallon jug of vaseline" "a can of wd40") and a $(shuf -n1 -e dead frozen live young) chicken, and $(shuf -n1 -e "have fun" "make chicks" "lay it like an egg" "put my beak where it don't belong") ALL NIGHT LONG!!!\""
 keywords[dragonforce]="msg \"$chan\" \"$who: I love DragonForce!!!\""
+keywords[vim]="msg \"$chan\" \"$(shuf -n1 -e \
+    "Praise vim! HA"\
+    "Only through vim can you be saved! HA")\""
 
 wordList="$(echo "${@,,}" | tr '[:space:]' $'\n' | sort -u)"
 for w in ${wordList//[[:punct:]]/} ; do
