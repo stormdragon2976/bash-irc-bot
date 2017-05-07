@@ -20,10 +20,7 @@ trap close_bot EXIT $?
 echo "Session started $(date "+%I:%M%p%n    %A, %B %d, %Y")" | tee "$log" 
 echo "NICK $nick" | tee "$input"
 echo "USER $user" | tee -a "$input"
-for c in ${channel[@]} ; do
-  echo "JOIN #$c" | tee -a "$input"
-  sleep 0.5
-done
+echo "JOIN #$channel" | tee -a "$input"
 
 tail -f "$input" | telnet "$server" "$port" | while read result
 do
@@ -43,7 +40,7 @@ do
     # Run on kick
     :*!*@*" KICK "*" $nick :"*)
     if [ "$autoRejoinChannel" = "true" ]; then
-        echo "JOIN #$c" | tee -a "$input"
+        echo "JOIN #$channel" | tee -a "$input"
     fi
     if [ "$curseKicker" = "true" ]; then
         kickerName="${result%!*}"
@@ -90,7 +87,8 @@ set +f
       who="${result%%!*}"
       who="${who:1}"
       from="${result#*#}"
-      from="#${from%% *}"
+      from="${from%% *}"
+      from="#${from:-$channel}"
       # Trigger stuff happens here.
       # Call link trigger if msg contains a link:
       if [[ "$result" =~ .*http://|https://|www\..* ]]; then
