@@ -34,6 +34,8 @@ keywords[dragonforce]="msg \"$chan\" \"$who: I love DragonForce!!!\""
 keywords[vim]="msg \"$chan\" \"$(shuf -n1 -e \
     "Praise vim! HA"\
     "In times of trouble, just ask yourself, 'What would Bram Moolenaar do?'."\
+"Vim is like a Ferrari, if you're a beginner, it handles like a bitch, but once you get the hang of it, it's small, powerful and FAST!"\
+"VIM is like a new model Ferrari, and sounds like one too - 'VIIIIIIMMM!'"\
     "Only through vim can you be saved! HA")\""
 
 wordList="$(echo "${@,,}" | tr '[:space:]' $'\n' | sort -u)"
