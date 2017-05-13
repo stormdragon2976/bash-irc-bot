@@ -29,7 +29,7 @@ keywords[pluma]="msg \"$chan\" \"$who, Real men use vim!\""
 keywords[sbl]="msg \"$chan\" \"$(shuf -n1 -e \
     "Oh yeah! Let's all use SBL, a CLI reader that doesn't compile or work! That's a great  idea! Or, here's an idea... USE FENRIR DUMB ASS!"\
     "SBL, a great idea. Now here's another great idea: Skip buying a Braille display, just contract herpes, jam a usb chord up your ass, and see if the breakout patterns match what's on screen!")\""
-keywords[chicken]="msg \"$chan\" \"$who, I'm gonna grab me $(shuf -n1 -e "a case of beer" "a weed eater" "a 5 gallon jug of vaseline" "a can of wd40") and a $(shuf -n1 -e dead frozen live young) chicken, and $(shuf -n1 -e "have fun" "make chicks" "lay it like an egg" "put my beak where it don't belong") ALL NIGHT LONG!!!\""
+keywords[chicken]="msg \"$chan\" \"$who, I'm gonna grab me $(shuf -n1 -e "a case of beer" "a weed eater" "a 5 gallon jug of vaseline" "a can of wd40") and a $(shuf -n1 -e dead frozen live young baby) chicken, and $(shuf -n1 -e "have fun" "make chicks" "lay it like an egg" "put my beak where it don't belong") ALL NIGHT LONG!!!\""
 keywords[dragonforce]="msg \"$chan\" \"$who: I love DragonForce!!!\""
 keywords[vim]="msg \"$chan\" \"$(shuf -n1 -e \
     "Praise vim! HA"\
