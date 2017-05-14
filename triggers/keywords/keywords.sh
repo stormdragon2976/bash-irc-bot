@@ -22,6 +22,14 @@ keywords[windows]="msg \"$chan\" \"$(shuf -n1 -e\
     "Windows - Just another pain in the glass."\
     "Windows, it's not pretty, it's not ugly, but it's pretty ugly.")!\""
 keywords[emacs]="msg \"$chan\" \"$who, Real men use vim!\""
+keywords[eloquents]="msg \"$chan\" \"$(shuf -n1 -e \
+    "anticaesure" \
+    "caesure" \
+    "hh've" \
+    "tzsche" \
+    "uncosp" \
+    "webhesday" \
+    "wedhesday")\""
 keywords[emacspeak]="msg \"$chan\" \"$who, Real men use vim!\""
 keywords[nano]="msg \"$chan\" \"$who, Real men use vim!\""
 keywords[gedit]="msg \"$chan\" \"$who, Real men use vim!\""
