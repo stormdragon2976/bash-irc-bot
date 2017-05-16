@@ -1,6 +1,7 @@
 [ -f functions.sh ] && source functions.sh
 
-who="$1"
+who="${1%!*}"
+who="${who//:}"
 shift
 chan="$1"
 shift
@@ -38,8 +39,15 @@ keywords[eloquents]="msg \"$chan\" \"$(shuf -n1 -e \
     "uncosp" \
     "webhesday" \
     "wedhesday")\""
+keywords[jaws]="msg \"$chan\" \"$(shuf -n1 -e \
+    "${who}: watch out for sharks!"\
+    "Ooooo! Jaws! Yeah, let's spend 1,500 bucks to buy what NVDA can do for free... Not much of an accountant are you ${who}?")\""
+keywords[jfw]="msg \"$chan\" JFW: Recursive acronym: meaning Jaws! FUCKING WORTHLESS!"
 keywords[emacspeak]="msg \"$chan\" \"$who, Real men use vim!\""
 keywords[nano]="msg \"$chan\" \"$who, Real men use vim!\""
+keywords[pidgin]="msg \"$chan\" \"$who, Real men use irssi!\""
+keywords[weechat]="msg \"$chan\" \"$who, Real men use irssi!\""
+keywords[thunderbird]="msg \"$chan\" \"$who, Real men use mutt!\""
 keywords[gedit]="msg \"$chan\" \"$who, Real men use vim!\""
 keywords[pluma]="msg \"$chan\" \"$who, Real men use vim!\""
 keywords[sbl]="msg \"$chan\" \"$(shuf -n1 -e \
