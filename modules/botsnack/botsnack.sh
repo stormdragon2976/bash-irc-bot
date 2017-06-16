@@ -7,6 +7,7 @@ shift
 snack="${@#botsnack}"
 snack="${snack:-$(shuf -n1 -e\
   "BBQ microchips"\
+"BBQ sunflower seeds"\
   "BBQ corn nuts"\
   "steak")}"
 thanks="$(shuf -n1 -e "Thank you" "You're so awesome" "You shouldn't have" "You rock")"
