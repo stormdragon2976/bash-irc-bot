@@ -1,16 +1,25 @@
 [ -f functions.sh ] && source functions.sh
 
-userNick="$1"
 shift
 chan="$1"
 shift
 #get the lyric text into a variable
-trackName="${@//:/ - }"
-trackName="${@//Ö/o}"
-# Try to work around some common tags that will fail to find lyrics.
-trackName="${trackName//\//_}"
-curl="$(command -v curl)"
-trackName="$(echo "$trackName" | sed -e "s/ /_/g" -e 's/([[:print:]]*)//g' -e "s/['\/\.]//g" -e 's/&/and/g' -e 's/ö/o/g')"
+trackName="${@//Ã/o}"
+trackName="${trackName//:/-}"
+trackName="$(echo "$trackName" | sed -r -e "s/((\w|\d| |\.|!|\?|')+ - (\w|\d| |\.|!|\?|')+)( +\[| +\(| +- ).*/\1/")"
+# Random agent string
+agent="$(shuf -n 1 -e \
+    "Mozilla/5.0 (Android; Mobile; rv:40.0) Gecko/40.0 Firefox/40.0"\
+    "Mozilla/5.0 (Android; Tablet; rv:40.0) Gecko/40.0 Firefox/40.0"\
+    "Mozilla/5.0 (Linux; Android 4.4; Nexus 5 Build/_BuildID_) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36")"
+# Get our curl command
+unset curl
+if command -v torify &> /dev/null ; then
+curl="torify "
+fi
+curl="${curl}curl"
+#Lyricsmania
+trackName="$(echo "$trackName" | sed -e "s/ /_/g" -e "s/([[:print:]]*)//g" -e "s/['\/\.]//g" -e 's/&/and/g')"
 artist="$(echo "${trackName,,}" | cut -d "-" -f 1 | sed -e 's/_$//' -e 's/^the_\(.*\)/\1_the/')"
 song="$(echo "${trackName,,}" | cut -d "-" -f 2 | sed 's/^_//')"
 lyricsUrl="http://www.lyricsmania.com/${song}_lyrics_${artist}.html"
@@ -37,10 +46,12 @@ if [ ${#lyricText} -gt 412 ] ; then
     lyricText="${lyricText:0:409}... "
     lyricText="$(echo "$lyricText" | rev | cut -d " " -f 1- | rev)"
 fi
-    lyricText="$(echo "$lyricText" | sed -e 's/try {.*//g' -e 's/  +_402_Show//g')"
+#remove simi-colons
+lyricText="$(echo "$lyricText" | tr ';' ':' | sed 's/try { _402_Show(): } catch(e) {}//')"
 #Display the lyric text
 if [ ${#lyricText} -gt 15 ] ; then
-act "$chan" "sings, '${lyricText}'"
-else
-msg "$chan" "Sorry $userNick: I couldn't find any lyrics for $@"
+msg "$chan" "${lyricText}"
+exit 0
 fi
+msg "$chan" "no lyrics found for ${trackName}."
+exit 0
