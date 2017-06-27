@@ -4,9 +4,6 @@ case "${1,,}" in
 storm_dragon)
 msg "$2" "my lord, $1: how may I serve you?"
 ;;
-kendell*)
-msg "$2" "Hey hey $1: what do you say, how many Dudes did you love today?"
-;;
 *)
 greeting=(
   Greetings
