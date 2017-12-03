@@ -13,5 +13,5 @@ if [ ${#lyricText} -gt 15 ] ; then
 msg "$chan" "${lyricText}"
 exit 0
 fi
-msg "$chan" "no lyrics found for ${trackName}."
+msg "$chan" "no lyrics found for $@."
 exit 0
